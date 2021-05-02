@@ -1,0 +1,81 @@
+-----------------------------------------------------------------------
+--- your header goes here
+-----------------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.ALL;
+
+ENTITY raminfr IS
+ PORT(
+ clk : IN std_logic;
+ reset_n : IN std_logic;
+ write_n : IN std_logic_vector(3 DOWNTO 0);
+ address : IN std_logic_vector(11 DOWNTO 0);
+ writedata : IN std_logic_vector(31 DOWNTO 0);
+ --
+ readdata : OUT std_logic_vector(31 DOWNTO 0)
+ );
+END ENTITY raminfr;
+
+
+ARCHITECTURE rtl OF raminfr IS
+
+ TYPE ram_type IS ARRAY (4095 DOWNTO 0) OF std_logic_vector (7 DOWNTO 0);
+ SIGNAL RAM_3 : ram_type;
+ SIGNAL RAM_2 : ram_type;
+ SIGNAL RAM_1 : ram_type;
+ SIGNAL RAM_0 : ram_type;
+ SIGNAL read_addr : std_logic_vector(11 DOWNTO 0);
+
+BEGIN
+ RamBlock_3 : PROCESS(clk)
+ BEGIN
+    IF (clk'event AND clk = '1') THEN
+        IF (reset_n = '0') THEN
+            read_addr <= (OTHERS => '0');
+        ELSIF (write_n(3) = '0') THEN
+            RAM_3(conv_integer(address)) <= writedata;
+        END IF;
+        read_addr <= address;
+    END IF;
+ END PROCESS RamBlock_3;
+ 
+ RamBlock_2 : PROCESS(clk)
+ BEGIN
+    IF (clk'event AND clk = '1') THEN
+        IF (reset_n = '0') THEN
+            read_addr <= (OTHERS => '0');
+        ELSIF (write_n(2) = '0') THEN
+            RAM_2(conv_integer(address)) <= writedata;
+        END IF;
+        read_addr <= address;
+    END IF;
+ END PROCESS RamBlock_2;
+ 
+ RamBlock_1 : PROCESS(clk)
+ BEGIN
+    IF (clk'event AND clk = '1') THEN
+        IF (reset_n = '0') THEN
+            read_addr <= (OTHERS => '0');
+        ELSIF (write_n(1) = '0') THEN
+            RAM_1(conv_integer(address)) <= writedata;
+        END IF;
+        read_addr <= address;
+    END IF;
+ END PROCESS RamBlock_1;
+ 
+ RamBlock_0: PROCESS(clk)
+ BEGIN
+    IF (clk'event AND clk = '1') THEN
+        IF (reset_n = '0') THEN
+            read_addr <= (OTHERS => '0');
+        ELSIF (write_n(0) = '0') THEN
+            RAM_0(conv_integer(address)) <= writedata;
+        END IF;
+        read_addr <= address;
+    END IF;
+ END PROCESS RamBlock_0;
+
+ readdata <= RAM_3(conv_integer(read_addr)) & RAM_2(conv_integer(read_addr)) & RAM_1(conv_integer(read_addr)) & RAM_0(conv_integer(read_addr));
+
+END ARCHITECTURE rtl;

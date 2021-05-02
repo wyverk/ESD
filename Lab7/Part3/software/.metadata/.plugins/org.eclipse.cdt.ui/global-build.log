@@ -1,0 +1,900 @@
+03:52:23 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8548 Bytes program size (code + initialized data).
+Info:                       7104 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+03:53:07 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+03:55:14 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8460 Bytes program size (code + initialized data).
+Info:                       7192 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+03:56:04 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+03:56:58 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8460 Bytes program size (code + initialized data).
+Info:                       7192 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+03:59:13 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8464 Bytes program size (code + initialized data).
+Info:                       7188 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:03:56 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+part4.c: In function 'Ram_test_32bit':
+part4.c:92:11: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+    printf("ERROR: Address: 0x0000_%04X Read: 0x0000_%04X Expected: 0x0000_%04X", i, *(start + i), data);
+           ^
+part4.c:92:11: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8524 Bytes program size (code + initialized data).
+Info:                       7128 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:04:58 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+part4.c: In function 'Ram_test_16bit':
+part4.c:73:93: error: invalid operands to binary + (have 'uint16 * {aka short unsigned int *}' and 'uint16 * {aka short unsigned int *}')
+    printf("ERROR: Address: 0x0000_%04X Read: 0x0000_%04X Expected: 0x0000_%04X", i, *(start + i), data);
+                                                                                             ^
+part4.c: In function 'Ram_test_32bit':
+part4.c:94:11: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+    printf("ERROR: Address: 0x0000_%04X Read: 0x0000_%04X Expected: 0x0000_%04X", i, *(start + i), data);
+           ^
+part4.c:94:11: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+make: *** [obj/default/part4.o] Error 1
+04:05:49 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+part4.c: In function 'Ram_test_16bit':
+part4.c:73:11: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint16 * {aka short unsigned int *}' [-Wformat=]
+    printf("ERROR: Address: 0x0000_%04X Read: 0x0000_%04X Expected: 0x0000_%04X", i, *i, data);
+           ^
+part4.c:73:11: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint16 * {aka short unsigned int *}' [-Wformat=]
+part4.c: In function 'Ram_test_32bit':
+part4.c:94:11: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+    printf("ERROR: Address: 0x0000_%04X Read: 0x0000_%04X Expected: 0x0000_%04X", i, *(start + i), data);
+           ^
+part4.c:94:11: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8568 Bytes program size (code + initialized data).
+Info:                       7084 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:05:52 **** Incremental Build of configuration Nios II for project part_4_software_bsp ****
+make all 
+[BSP build complete]
+04:07:23 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+part4.c: In function 'Ram_test_32bit':
+part4.c:94:11: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+    printf("ERROR: Address: 0x0000_%04X Read: 0x0000_%04X Expected: 0x0000_%04X", i, *(start + i), data);
+           ^
+part4.c:94:11: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8572 Bytes program size (code + initialized data).
+Info:                       7080 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:07:27 **** Incremental Build of configuration Nios II for project part_4_software_bsp ****
+make all 
+[BSP build complete]
+04:07:41 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8512 Bytes program size (code + initialized data).
+Info:                       7140 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:07:44 **** Incremental Build of configuration Nios II for project part_4_software_bsp ****
+make all 
+[BSP build complete]
+04:08:05 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+04:08:59 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+04:10:17 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8584 Bytes program size (code + initialized data).
+Info:                       7068 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:31:38 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8584 Bytes program size (code + initialized data).
+Info:                       7068 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:34:14 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8764 Bytes program size (code + initialized data).
+Info:                       6888 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:36:07 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+04:38:49 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+04:40:21 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8584 Bytes program size (code + initialized data).
+Info:                       7068 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:43:27 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8584 Bytes program size (code + initialized data).
+Info:                       7068 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:46:57 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8596 Bytes program size (code + initialized data).
+Info:                       7056 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:48:27 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8608 Bytes program size (code + initialized data).
+Info:                       7044 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:50:47 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+04:52:44 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8788 Bytes program size (code + initialized data).
+Info:                       6864 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:52:50 **** Incremental Build of configuration Nios II for project part_4_software_bsp ****
+make all 
+[BSP build complete]
+04:53:03 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+04:54:29 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8788 Bytes program size (code + initialized data).
+Info:                       6864 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:57:40 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+part4.c: In function 'Ram_test_8bit':
+part4.c:50:100: error: invalid type argument of unary '*' (have 'int')
+    printf("ERROR: Address: 0x0000_%04X Read: 0x0000_%04X Expected: 0x0000_%04X", (unsigned int) i, *i, data);
+                                                                                                    ^
+make: *** [obj/default/part4.o] Error 1
+04:58:37 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8520 Bytes program size (code + initialized data).
+Info:                       7132 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:58:40 **** Incremental Build of configuration Nios II for project part_4_software_bsp ****
+make all 
+[BSP build complete]
+05:08:05 **** Cleaning Selected Files of configuration Nios II for project part_4_software ****
+Info: Internal Builder is used for build
+Nothing to clean.
+05:08:11 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+part4.c: In function 'Print_32bit':
+part4.c:92:9: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+  printf("ERROR: Address: 0x%04X_%04X Read: 0x%04X_%04X Expected: 0x%04X_%04X \n", (unsigned int) addr, *addr, data);
+         ^
+part4.c:92:9: warning: format '%X' expects argument of type 'unsigned int', but argument 4 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+part4.c:92:9: warning: format '%X' expects a matching 'unsigned int' argument [-Wformat=]
+part4.c:92:9: warning: format '%X' expects a matching 'unsigned int' argument [-Wformat=]
+part4.c:92:9: warning: format '%X' expects a matching 'unsigned int' argument [-Wformat=]
+part4.c:92:9: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+part4.c:92:9: warning: format '%X' expects argument of type 'unsigned int', but argument 4 has type 'uint32 {aka long unsigned int}' [-Wformat=]
+part4.c:92:9: warning: format '%X' expects a matching 'unsigned int' argument [-Wformat=]
+part4.c:92:9: warning: format '%X' expects a matching 'unsigned int' argument [-Wformat=]
+part4.c:92:9: warning: format '%X' expects a matching 'unsigned int' argument [-Wformat=]
+part4.c:90:15: warning: unused variable 'data_hw_low' [-Wunused-variable]
+  unsigned int data_hw_low  = data & 0x0000FFFF;
+               ^
+part4.c:89:15: warning: unused variable 'data_hw_high' [-Wunused-variable]
+  unsigned int data_hw_high = (data >> 16) & 0x0000FFFF;
+               ^
+part4.c:87:15: warning: unused variable 'ram_hw_low' [-Wunused-variable]
+  unsigned int ram_hw_low  = *addr & 0x0000FFFF;
+               ^
+part4.c:86:15: warning: unused variable 'ram_hw_high' [-Wunused-variable]
+  unsigned int ram_hw_high = (*addr >> 16) & 0x0000FFFF;
+               ^
+part4.c:84:15: warning: unused variable 'addr_hw_low' [-Wunused-variable]
+  unsigned int addr_hw_low  = ((unsigned int) addr)  & 0x0000FFFF;
+               ^
+part4.c:83:15: warning: unused variable 'addr_hw_high' [-Wunused-variable]
+  unsigned int addr_hw_high = ((unsigned int) addr >> 16) & 0x0000FFFF;
+               ^
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8756 Bytes program size (code + initialized data).
+Info:                       6896 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+05:08:14 **** Incremental Build of configuration Nios II for project part_4_software_bsp ****
+make all 
+[BSP build complete]
+05:09:15 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8768 Bytes program size (code + initialized data).
+Info:                       6884 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+05:09:19 **** Incremental Build of configuration Nios II for project part_4_software_bsp ****
+make all 
+[BSP build complete]
+05:10:30 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+05:10:30 **** Incremental Build of configuration Nios II for project part_4_software_bsp ****
+make all 
+[BSP build complete]
+05:10:33 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+05:11:52 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+05:13:00 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+08:44:37 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+part4.c: In function 'main':
+part4.c:124:6: warning: unused variable 'num_write' [-Wunused-variable]
+  int num_write = 23;
+      ^
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 8864 Bytes program size (code + initialized data).
+Info:                       6788 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+08:44:40 **** Incremental Build of configuration Nios II for project part_4_software_bsp ****
+make all 
+[BSP build complete]
+08:44:46 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+08:48:37 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+part4.c: In function 'main':
+part4.c:124:6: warning: unused variable 'num_write' [-Wunused-variable]
+  int num_write = 23;
+      ^
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9056 Bytes program size (code + initialized data).
+Info:                       6596 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+08:49:38 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+part4.c: In function 'main':
+part4.c:124:6: warning: unused variable 'num_write' [-Wunused-variable]
+  int num_write = 23;
+      ^
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9052 Bytes program size (code + initialized data).
+Info:                       6600 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+08:53:15 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9060 Bytes program size (code + initialized data).
+Info:                       6592 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+08:54:45 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9056 Bytes program size (code + initialized data).
+Info:                       6596 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+08:54:50 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+08:56:33 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+08:57:39 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+09:01:23 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+part4.c: In function 'Ram_test_16bit':
+part4.c:62:6: error: invalid operands to binary / (have 'uint16 * {aka short unsigned int *}' and 'int')
+   *(i/2) = data;
+      ^
+part4.c:70:9: error: invalid operands to binary / (have 'uint16 * {aka short unsigned int *}' and 'int')
+   if(*(i/2) != data){
+         ^
+part4.c: In function 'Ram_test_32bit':
+part4.c:97:6: error: invalid operands to binary / (have 'uint32 * {aka long unsigned int *}' and 'int')
+   *(i/4) = data;
+      ^
+part4.c:105:9: error: invalid operands to binary / (have 'uint32 * {aka long unsigned int *}' and 'int')
+   if(*(i/4) != data){
+         ^
+make: *** [obj/default/part4.o] Error 1
+09:05:22 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+part4.c: In function 'Ram_test_16bit':
+part4.c:61:48: error: invalid operands to binary / (have 'uint16 * {aka short unsigned int *}' and 'int')
+  for(uint16* i = start; i < (start + num_write)/(uint16) 2; i++){
+                                                ^
+part4.c:70:9: error: invalid operands to binary / (have 'uint16 * {aka short unsigned int *}' and 'int')
+   if(*(i/2) != data){
+         ^
+part4.c: In function 'Ram_test_32bit':
+part4.c:97:6: error: invalid operands to binary / (have 'uint32 * {aka long unsigned int *}' and 'int')
+   *(i/4) = data;
+      ^
+part4.c:105:9: error: invalid operands to binary / (have 'uint32 * {aka long unsigned int *}' and 'int')
+   if(*(i/4) != data){
+         ^
+make: *** [obj/default/part4.o] Error 1
+09:05:23 **** Incremental Build of configuration Nios II for project part_4_software_bsp ****
+make all 
+[BSP build complete]
+09:05:34 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+part4.c: In function 'Ram_test_16bit':
+part4.c:61:48: error: invalid operands to binary / (have 'uint16 * {aka short unsigned int *}' and 'uint16 * {aka short unsigned int *}')
+  for(uint16* i = start; i < (start + num_write)/(uint16*) 2; i++){
+                                                ^
+part4.c:69:48: error: invalid operands to binary / (have 'uint16 * {aka short unsigned int *}' and 'int')
+  for(uint16* i = start; i < (start + num_write)/(uint16) 2; i++){
+                                                ^
+part4.c: In function 'Ram_test_32bit':
+part4.c:97:6: error: invalid operands to binary / (have 'uint32 * {aka long unsigned int *}' and 'int')
+   *(i/4) = data;
+      ^
+part4.c:105:9: error: invalid operands to binary / (have 'uint32 * {aka long unsigned int *}' and 'int')
+   if(*(i/4) != data){
+         ^
+make: *** [obj/default/part4.o] Error 1
+09:05:35 **** Incremental Build of configuration Nios II for project part_4_software_bsp ****
+make all 
+[BSP build complete]
+09:06:32 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+part4.c: In function 'Ram_test_32bit':
+part4.c:97:6: error: invalid operands to binary / (have 'uint32 * {aka long unsigned int *}' and 'int')
+   *(i/4) = data;
+      ^
+part4.c:105:9: error: invalid operands to binary / (have 'uint32 * {aka long unsigned int *}' and 'int')
+   if(*(i/4) != data){
+         ^
+make: *** [obj/default/part4.o] Error 1
+09:06:33 **** Incremental Build of configuration Nios II for project part_4_software_bsp ****
+make all 
+[BSP build complete]
+09:09:44 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9144 Bytes program size (code + initialized data).
+Info:                       6508 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+09:09:48 **** Incremental Build of configuration Nios II for project part_4_software_bsp ****
+make all 
+[BSP build complete]
+09:09:57 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+[part_4_software build complete]
+09:11:30 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9120 Bytes program size (code + initialized data).
+Info:                       6532 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+09:20:59 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9052 Bytes program size (code + initialized data).
+Info:                       6600 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+09:21:36 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9052 Bytes program size (code + initialized data).
+Info:                       6600 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+09:25:32 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9052 Bytes program size (code + initialized data).
+Info:                       6600 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+09:27:56 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9052 Bytes program size (code + initialized data).
+Info:                       6600 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+09:29:06 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9032 Bytes program size (code + initialized data).
+Info:                       6620 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+09:30:48 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9032 Bytes program size (code + initialized data).
+Info:                       6620 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+09:32:19 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9032 Bytes program size (code + initialized data).
+Info:                       6620 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+09:36:18 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9052 Bytes program size (code + initialized data).
+Info:                       6600 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+09:46:01 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9092 Bytes program size (code + initialized data).
+Info:                       6560 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+09:51:12 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9208 Bytes program size (code + initialized data).
+Info:                       6444 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:27:06 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9232 Bytes program size (code + initialized data).
+Info:                       6420 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]
+04:31:10 **** Incremental Build of configuration Nios II for project part_4_software ****
+make all 
+Info: Building ../part_4_software_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../part_4_software_bsp/
+[BSP build complete]
+Info: Compiling part4.c to obj/default/part4.o
+nios2-elf-gcc -xc -MP -MMD -c -I../part_4_software_bsp//HAL/inc -I../part_4_software_bsp/ -I../part_4_software_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part4.o part4.c
+Info: Linking part_4_software.elf
+nios2-elf-g++  -T'../part_4_software_bsp//linker.x' -msys-crt0='../part_4_software_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../part_4_software_bsp/  -msmallc  -Wl,-Map=part_4_software.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o part_4_software.elf obj/default/part4.o -lm -msys-lib=m
+nios2-elf-insert part_4_software.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 7 --sidp 0x9020 --timestamp 1616618483 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "E:/ESD/Lab6/Quartus/Part3" --jdi ../..//output_files/part1.jdi --sopcinfo E:/ESD/Lab6/Quartus/Part3/software/part_4_software_bsp/../../nios_system.sopcinfo
+Info: (part_4_software.elf) 9232 Bytes program size (code + initialized data).
+Info:                       6420 Bytes free for stack + heap.
+Info: Creating part_4_software.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source part_4_software.elf >part_4_software.objdump
+[part_4_software build complete]

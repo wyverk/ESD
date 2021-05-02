@@ -1,0 +1,14 @@
+
+State Machine - |servo_controller|next_state
+Name next_state.INT_LEFT next_state.SW_RIGHT next_state.INT_RIGHT next_state.SW_LEFT 
+next_state.SW_LEFT 0 0 0 0 
+next_state.INT_RIGHT 0 0 1 1 
+next_state.SW_RIGHT 0 1 0 1 
+next_state.INT_LEFT 1 0 0 1 
+
+State Machine - |servo_controller|current_state
+Name current_state.INT_LEFT current_state.SW_RIGHT current_state.INT_RIGHT current_state.SW_LEFT 
+current_state.SW_LEFT 0 0 0 0 
+current_state.INT_RIGHT 0 0 1 1 
+current_state.SW_RIGHT 0 1 0 1 
+current_state.INT_LEFT 1 0 0 1 

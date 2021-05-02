@@ -1,0 +1,281 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+
+PACKAGE filter_pkg IS
+	COMPONENT filter IS
+	PORT(
+		clk: IN STD_LOGIC;
+		reset_n: IN STD_LOGIC;
+		address: IN STD_LOGIC;
+		writedata: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+		write: IN STD_LOGIC;
+		readdata: OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+		);
+	END COMPONENT;
+END PACKAGE;
+
+---------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+USE ieee.std_logic_unsigned.ALL;
+
+LIBRARY work;
+USE work.generic_reg_pkg.ALL;
+USE work.rising_edge_synchronizer_pkg.ALL;
+
+ENTITY filter IS
+	PORT(
+		clk: IN STD_LOGIC;
+		reset_n: IN STD_LOGIC;
+		address: IN STD_LOGIC;
+		writedata: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+		write: IN STD_LOGIC;
+		readdata: OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+	);
+END ENTITY;
+
+ARCHITECTURE arch OF filter IS
+
+----------------------------------------------------------------------------
+	TYPE STD_ARRAY_17 IS ARRAY(16 DOWNTO 0) OF STD_LOGIC_VECTOR(15 DOWNTO 0);
+	CONSTANT low_pass : STD_ARRAY_17 := 
+	(
+		x"0052",
+		x"00BB",
+		x"01E2",
+		x"0408",
+		x"071B",
+		x"0AAD",
+		x"0E11",
+		x"1080",
+		x"1162",
+		x"1080",
+		x"0E11",
+		x"0AAD",
+		x"071B",
+		x"0408",
+		x"01E2",
+		x"00BB",
+		x"0052"
+	);
+	
+	CONSTANT high_pass : STD_ARRAY_17 := 
+	(
+		x"003E",
+		x"FF9A",
+		x"FE9E",
+		x"0000",
+		x"0536",
+		x"05B2",
+		x"F5AC",
+		x"DAB7",
+		x"4C92",
+		x"DAB7",
+		x"F5AC",
+		x"05B2",
+		x"0536",
+		x"0000",
+		x"FE9E",
+		x"FF9A",
+		x"003E"
+	);
+	
+	SIGNAL coefs : STD_ARRAY_17 := (0 => x"7FFF", OTHERS => x"0000");
+----------------------------------------------------------------------------	
+	
+	TYPE STD_ARRAY IS ARRAY(15 DOWNTO 0) OF STD_LOGIC_VECTOR(15 DOWNTO 0);
+	
+	SIGNAL reg_data : STD_ARRAY := (OTHERS => (OTHERS => '0'));
+----------------------------------------------------------------------------
+	TYPE SIGNED_ARRAY_17 IS ARRAY(16 DOWNTO 0) OF SIGNED(15 DOWNTO 0);
+	
+	SIGNAL after_mul : SIGNED_ARRAY_17 := (OTHERS => (OTHERS => '0'));
+	
+----------------------------------------------------------------------------
+	
+	TYPE STD_ARRAY_FULL IS ARRAY(16 DOWNTO 0) OF STD_LOGIC_VECTOR(31 DOWNTO 0);
+	
+	SIGNAL after_mul_32 : STD_ARRAY_FULL := (OTHERS => (OTHERS => '0'));
+	
+	
+----------------------------------------------------------------------------
+
+	COMPONENT multiply IS
+		PORT
+		(
+			dataa		: IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+			datab		: IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+			result		: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+		);
+	END COMPONENT;
+	
+----------------------------------------------------------------------------
+	TYPE regs IS ARRAY(1 DOWNTO 0) OF STD_LOGIC_VECTOR(15 DOWNTO 0);
+
+	SIGNAL RAM : regs := (OTHERS => (OTHERS => '0'));
+
+
+----------------------------------------------------------------------------
+	
+	SIGNAL reset_edge : STD_LOGIC := '0';
+    
+    SIGNAL read_addr: STD_LOGIC_VECTOR(1 DOWNTO 0) := "00";
+	--SIGNAL filter_edge : STD_LOGIC := '0';
+	
+	SIGNAL addr_vector : STD_LOGIC_VECTOR(1 DOWNTO 0);
+	
+	--SIGNAL temp_sum : SIGNED(15 DOWNTO 0) := (OTHERS => '0');
+BEGIN
+	reset_sync: rising_edge_synchronizer
+	PORT MAP(
+		clk => clk,
+		reset => '0',
+		input => reset_n,
+		edge => reset_edge
+	);
+--	
+--	filter_sync: rising_edge_synchronizer
+--	PORT MAP(
+--		clk => clk,
+--		reset => reset_edge,
+--		input => filter_en,
+--		edge => filter_edge
+--	);
+	
+	addr_vector <= '0' & address;
+	-- data_read: PROCESS(clk, reset_edge)
+	-- BEGIN
+		-- IF reset_edge = '1' THEN
+			-- ram <= (OTHERS => (OTHERS => '0'));
+		-- ELSIF rising_edge(clk) THEN
+			-- IF write = '1' THEN
+				-- ram(to_integer(UNSIGNED(addr_vector))) <= writedata;
+			-- END IF;
+		-- END IF;
+	-- END PROCESS;
+	
+     RamBlock : PROCESS(clk)
+     BEGIN
+        IF (clk'event AND clk = '1') THEN
+            IF (reset_edge = '1') THEN
+                read_addr <= (OTHERS => '0');
+            ELSIF (write = '1') THEN
+                RAM(conv_integer(addr_vector)) <= writedata;
+            END IF;
+            read_addr <= addr_vector;
+        END IF;
+     END PROCESS RamBlock;
+     
+    switch: PROCESS(RAM(1))
+    BEGIN
+        IF RAM(1) = x"0000" THEN
+            coefs <= (0 => x"7FFF", OTHERS => x"0000");
+        ELSIF RAM(1) = x"0001" THEN
+            coefs <= high_pass;
+        ELSE
+            coefs <= (0 => x"7FFF", OTHERS => x"0000");
+        END IF;
+    END PROCESS;
+    
+    
+--    switch: PROCESS(clk, reset_edge)
+--    BEGIN
+--        IF reset_edge = '1' THEN
+--            coefs <= (OTHERS => (OTHERS => '0'));
+--        ELSIF rising_edge(clk) THEN
+--            IF address = '1' THEN
+--                IF writedata(0) = '0' THEN
+--                    coefs <= low_pass;
+--                ELSIF writedata(0) = '1' THEN
+--                    coefs <= high_pass;
+--                ELSE
+--                    coefs <= (OTHERS => (OTHERS => '0'));
+--                END IF;
+--				ELSE
+--					 
+--            END IF;
+--        END IF;
+--    END PROCESS;
+--	 
+--	ram(0) <= writedata WHEN address = '0' ELSE (OTHERS => '0');
+
+    -- switch: PROCESS(clk, reset_edge)
+    -- BEGIN
+        -- IF reset_edge = '1' THEN
+            -- coefs <= (0 => x"7FFF", OTHERS => x"0000");
+        -- ELSIF rising_edge(clk) THEN
+            -- IF write = '1' THEN
+                -- IF address = '1' THEN
+                    -- IF writedata = x"0000" THEN
+                        -- coefs <= low_pass;
+                    -- ELSIF writedata = x"0001" THEN
+                        -- coefs <= high_pass;
+                    -- ELSE
+                        -- coefs <= (0 => x"7FFF", OTHERS => x"0000");
+                    -- END IF;
+                -- END IF;
+            -- END IF;
+        -- END IF;
+    -- END PROCESS;
+    
+    
+	Reg_GEN:
+	for i in 0 to 15 GENERATE
+		lsb: if i = 0 GENERATE
+			U0: generic_reg
+			GENERIC MAP( bit_width => 16)
+			PORT MAP(
+				clk => clk,
+				reset => reset_edge,
+				enable => write,
+				input => RAM(0),
+				output => reg_data(0)
+			);
+		END GENERATE lsb;
+		
+		upper: if i > 0 GENERATE
+			Ux: generic_reg
+			GENERIC MAP( bit_width => 16)
+			PORT MAP(
+				clk => clk,
+				reset => reset_edge,
+				enable => write,
+				input => reg_data(i-1),
+				output => reg_data(i)
+			);
+		END GENERATE upper;
+	END GENERATE;
+	
+	mul_gen:
+	for i IN 0 TO 16 GENERATE	
+		lsb: if i = 0 GENERATE
+			U0: multiply
+			PORT MAP(
+				dataa => RAM(conv_integer(read_addr)),
+				datab => coefs(0),
+				result => after_mul_32(0)
+		   );
+		after_mul(0) <= SIGNED(after_mul_32(0)(30 DOWNTO 15));
+		END GENERATE lsb;
+		
+		upper: if i > 0 GENERATE
+			ux: multiply
+			PORT MAP(
+				dataa => reg_data(i-1),
+				datab => coefs(i),
+				result => after_mul_32(i)
+			);
+		after_mul(i) <= after_mul(i-1) + SIGNED(after_mul_32(i)(30 DOWNTO 15));
+		END GENERATE upper;
+		
+
+	END GENERATE;
+	
+    readdata <= STD_LOGIC_VECTOR(after_mul(16));
+
+	
+END ARCHITECTURE;
+	

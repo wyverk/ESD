@@ -1,0 +1,1570 @@
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+--D4_ram_block1a0 is altsyncram:RAM_0_rtl_0|altsyncram_gna1:auto_generated|ram_block1a0 at M10K_X5_Y2_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D4_ram_block1a0_PORT_A_data_in = BUS(A1L194, A1L196);
+D4_ram_block1a0_PORT_A_data_in_reg = DFFE(D4_ram_block1a0_PORT_A_data_in, D4_ram_block1a0_clock_0, , , );
+D4_ram_block1a0_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D4_ram_block1a0_PORT_A_address_reg = DFFE(D4_ram_block1a0_PORT_A_address, D4_ram_block1a0_clock_0, , , );
+D4_ram_block1a0_PORT_A_write_enable = A1L49;
+D4_ram_block1a0_PORT_A_write_enable_reg = DFFE(D4_ram_block1a0_PORT_A_write_enable, D4_ram_block1a0_clock_0, , , );
+D4_ram_block1a0_PORT_A_read_enable = VCC;
+D4_ram_block1a0_PORT_A_read_enable_reg = DFFE(D4_ram_block1a0_PORT_A_read_enable, D4_ram_block1a0_clock_0, , , );
+D4_ram_block1a0_clock_0 = GLOBAL(A1L29);
+D4_ram_block1a0_PORT_A_data_out = MEMORY(D4_ram_block1a0_PORT_A_data_in_reg, , D4_ram_block1a0_PORT_A_address_reg, , D4_ram_block1a0_PORT_A_write_enable_reg, D4_ram_block1a0_PORT_A_read_enable_reg, , , , , D4_ram_block1a0_clock_0, , , , , , , );
+D4_ram_block1a0 = D4_ram_block1a0_PORT_A_data_out[0];
+
+--D4_ram_block1a1 is altsyncram:RAM_0_rtl_0|altsyncram_gna1:auto_generated|ram_block1a1 at M10K_X5_Y2_N0
+D4_ram_block1a0_PORT_A_data_in = BUS(A1L194, A1L196);
+D4_ram_block1a0_PORT_A_data_in_reg = DFFE(D4_ram_block1a0_PORT_A_data_in, D4_ram_block1a0_clock_0, , , );
+D4_ram_block1a0_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D4_ram_block1a0_PORT_A_address_reg = DFFE(D4_ram_block1a0_PORT_A_address, D4_ram_block1a0_clock_0, , , );
+D4_ram_block1a0_PORT_A_write_enable = A1L49;
+D4_ram_block1a0_PORT_A_write_enable_reg = DFFE(D4_ram_block1a0_PORT_A_write_enable, D4_ram_block1a0_clock_0, , , );
+D4_ram_block1a0_PORT_A_read_enable = VCC;
+D4_ram_block1a0_PORT_A_read_enable_reg = DFFE(D4_ram_block1a0_PORT_A_read_enable, D4_ram_block1a0_clock_0, , , );
+D4_ram_block1a0_clock_0 = GLOBAL(A1L29);
+D4_ram_block1a0_PORT_A_data_out = MEMORY(D4_ram_block1a0_PORT_A_data_in_reg, , D4_ram_block1a0_PORT_A_address_reg, , D4_ram_block1a0_PORT_A_write_enable_reg, D4_ram_block1a0_PORT_A_read_enable_reg, , , , , D4_ram_block1a0_clock_0, , , , , , , );
+D4_ram_block1a1 = D4_ram_block1a0_PORT_A_data_out[1];
+
+
+--D4_ram_block1a2 is altsyncram:RAM_0_rtl_0|altsyncram_gna1:auto_generated|ram_block1a2 at M10K_X5_Y3_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D4_ram_block1a2_PORT_A_data_in = BUS(A1L198, A1L200);
+D4_ram_block1a2_PORT_A_data_in_reg = DFFE(D4_ram_block1a2_PORT_A_data_in, D4_ram_block1a2_clock_0, , , );
+D4_ram_block1a2_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D4_ram_block1a2_PORT_A_address_reg = DFFE(D4_ram_block1a2_PORT_A_address, D4_ram_block1a2_clock_0, , , );
+D4_ram_block1a2_PORT_A_write_enable = A1L49;
+D4_ram_block1a2_PORT_A_write_enable_reg = DFFE(D4_ram_block1a2_PORT_A_write_enable, D4_ram_block1a2_clock_0, , , );
+D4_ram_block1a2_PORT_A_read_enable = VCC;
+D4_ram_block1a2_PORT_A_read_enable_reg = DFFE(D4_ram_block1a2_PORT_A_read_enable, D4_ram_block1a2_clock_0, , , );
+D4_ram_block1a2_clock_0 = GLOBAL(A1L29);
+D4_ram_block1a2_PORT_A_data_out = MEMORY(D4_ram_block1a2_PORT_A_data_in_reg, , D4_ram_block1a2_PORT_A_address_reg, , D4_ram_block1a2_PORT_A_write_enable_reg, D4_ram_block1a2_PORT_A_read_enable_reg, , , , , D4_ram_block1a2_clock_0, , , , , , , );
+D4_ram_block1a2 = D4_ram_block1a2_PORT_A_data_out[0];
+
+--D4_ram_block1a3 is altsyncram:RAM_0_rtl_0|altsyncram_gna1:auto_generated|ram_block1a3 at M10K_X5_Y3_N0
+D4_ram_block1a2_PORT_A_data_in = BUS(A1L198, A1L200);
+D4_ram_block1a2_PORT_A_data_in_reg = DFFE(D4_ram_block1a2_PORT_A_data_in, D4_ram_block1a2_clock_0, , , );
+D4_ram_block1a2_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D4_ram_block1a2_PORT_A_address_reg = DFFE(D4_ram_block1a2_PORT_A_address, D4_ram_block1a2_clock_0, , , );
+D4_ram_block1a2_PORT_A_write_enable = A1L49;
+D4_ram_block1a2_PORT_A_write_enable_reg = DFFE(D4_ram_block1a2_PORT_A_write_enable, D4_ram_block1a2_clock_0, , , );
+D4_ram_block1a2_PORT_A_read_enable = VCC;
+D4_ram_block1a2_PORT_A_read_enable_reg = DFFE(D4_ram_block1a2_PORT_A_read_enable, D4_ram_block1a2_clock_0, , , );
+D4_ram_block1a2_clock_0 = GLOBAL(A1L29);
+D4_ram_block1a2_PORT_A_data_out = MEMORY(D4_ram_block1a2_PORT_A_data_in_reg, , D4_ram_block1a2_PORT_A_address_reg, , D4_ram_block1a2_PORT_A_write_enable_reg, D4_ram_block1a2_PORT_A_read_enable_reg, , , , , D4_ram_block1a2_clock_0, , , , , , , );
+D4_ram_block1a3 = D4_ram_block1a2_PORT_A_data_out[1];
+
+
+--D4_ram_block1a4 is altsyncram:RAM_0_rtl_0|altsyncram_gna1:auto_generated|ram_block1a4 at M10K_X5_Y1_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D4_ram_block1a4_PORT_A_data_in = BUS(A1L202, A1L204);
+D4_ram_block1a4_PORT_A_data_in_reg = DFFE(D4_ram_block1a4_PORT_A_data_in, D4_ram_block1a4_clock_0, , , );
+D4_ram_block1a4_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D4_ram_block1a4_PORT_A_address_reg = DFFE(D4_ram_block1a4_PORT_A_address, D4_ram_block1a4_clock_0, , , );
+D4_ram_block1a4_PORT_A_write_enable = A1L49;
+D4_ram_block1a4_PORT_A_write_enable_reg = DFFE(D4_ram_block1a4_PORT_A_write_enable, D4_ram_block1a4_clock_0, , , );
+D4_ram_block1a4_PORT_A_read_enable = VCC;
+D4_ram_block1a4_PORT_A_read_enable_reg = DFFE(D4_ram_block1a4_PORT_A_read_enable, D4_ram_block1a4_clock_0, , , );
+D4_ram_block1a4_clock_0 = GLOBAL(A1L29);
+D4_ram_block1a4_PORT_A_data_out = MEMORY(D4_ram_block1a4_PORT_A_data_in_reg, , D4_ram_block1a4_PORT_A_address_reg, , D4_ram_block1a4_PORT_A_write_enable_reg, D4_ram_block1a4_PORT_A_read_enable_reg, , , , , D4_ram_block1a4_clock_0, , , , , , , );
+D4_ram_block1a4 = D4_ram_block1a4_PORT_A_data_out[0];
+
+--D4_ram_block1a5 is altsyncram:RAM_0_rtl_0|altsyncram_gna1:auto_generated|ram_block1a5 at M10K_X5_Y1_N0
+D4_ram_block1a4_PORT_A_data_in = BUS(A1L202, A1L204);
+D4_ram_block1a4_PORT_A_data_in_reg = DFFE(D4_ram_block1a4_PORT_A_data_in, D4_ram_block1a4_clock_0, , , );
+D4_ram_block1a4_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D4_ram_block1a4_PORT_A_address_reg = DFFE(D4_ram_block1a4_PORT_A_address, D4_ram_block1a4_clock_0, , , );
+D4_ram_block1a4_PORT_A_write_enable = A1L49;
+D4_ram_block1a4_PORT_A_write_enable_reg = DFFE(D4_ram_block1a4_PORT_A_write_enable, D4_ram_block1a4_clock_0, , , );
+D4_ram_block1a4_PORT_A_read_enable = VCC;
+D4_ram_block1a4_PORT_A_read_enable_reg = DFFE(D4_ram_block1a4_PORT_A_read_enable, D4_ram_block1a4_clock_0, , , );
+D4_ram_block1a4_clock_0 = GLOBAL(A1L29);
+D4_ram_block1a4_PORT_A_data_out = MEMORY(D4_ram_block1a4_PORT_A_data_in_reg, , D4_ram_block1a4_PORT_A_address_reg, , D4_ram_block1a4_PORT_A_write_enable_reg, D4_ram_block1a4_PORT_A_read_enable_reg, , , , , D4_ram_block1a4_clock_0, , , , , , , );
+D4_ram_block1a5 = D4_ram_block1a4_PORT_A_data_out[1];
+
+
+--D4_ram_block1a6 is altsyncram:RAM_0_rtl_0|altsyncram_gna1:auto_generated|ram_block1a6 at M10K_X5_Y4_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D4_ram_block1a6_PORT_A_data_in = BUS(A1L206, A1L208);
+D4_ram_block1a6_PORT_A_data_in_reg = DFFE(D4_ram_block1a6_PORT_A_data_in, D4_ram_block1a6_clock_0, , , );
+D4_ram_block1a6_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D4_ram_block1a6_PORT_A_address_reg = DFFE(D4_ram_block1a6_PORT_A_address, D4_ram_block1a6_clock_0, , , );
+D4_ram_block1a6_PORT_A_write_enable = A1L49;
+D4_ram_block1a6_PORT_A_write_enable_reg = DFFE(D4_ram_block1a6_PORT_A_write_enable, D4_ram_block1a6_clock_0, , , );
+D4_ram_block1a6_PORT_A_read_enable = VCC;
+D4_ram_block1a6_PORT_A_read_enable_reg = DFFE(D4_ram_block1a6_PORT_A_read_enable, D4_ram_block1a6_clock_0, , , );
+D4_ram_block1a6_clock_0 = GLOBAL(A1L29);
+D4_ram_block1a6_PORT_A_data_out = MEMORY(D4_ram_block1a6_PORT_A_data_in_reg, , D4_ram_block1a6_PORT_A_address_reg, , D4_ram_block1a6_PORT_A_write_enable_reg, D4_ram_block1a6_PORT_A_read_enable_reg, , , , , D4_ram_block1a6_clock_0, , , , , , , );
+D4_ram_block1a6 = D4_ram_block1a6_PORT_A_data_out[0];
+
+--D4_ram_block1a7 is altsyncram:RAM_0_rtl_0|altsyncram_gna1:auto_generated|ram_block1a7 at M10K_X5_Y4_N0
+D4_ram_block1a6_PORT_A_data_in = BUS(A1L206, A1L208);
+D4_ram_block1a6_PORT_A_data_in_reg = DFFE(D4_ram_block1a6_PORT_A_data_in, D4_ram_block1a6_clock_0, , , );
+D4_ram_block1a6_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D4_ram_block1a6_PORT_A_address_reg = DFFE(D4_ram_block1a6_PORT_A_address, D4_ram_block1a6_clock_0, , , );
+D4_ram_block1a6_PORT_A_write_enable = A1L49;
+D4_ram_block1a6_PORT_A_write_enable_reg = DFFE(D4_ram_block1a6_PORT_A_write_enable, D4_ram_block1a6_clock_0, , , );
+D4_ram_block1a6_PORT_A_read_enable = VCC;
+D4_ram_block1a6_PORT_A_read_enable_reg = DFFE(D4_ram_block1a6_PORT_A_read_enable, D4_ram_block1a6_clock_0, , , );
+D4_ram_block1a6_clock_0 = GLOBAL(A1L29);
+D4_ram_block1a6_PORT_A_data_out = MEMORY(D4_ram_block1a6_PORT_A_data_in_reg, , D4_ram_block1a6_PORT_A_address_reg, , D4_ram_block1a6_PORT_A_write_enable_reg, D4_ram_block1a6_PORT_A_read_enable_reg, , , , , D4_ram_block1a6_clock_0, , , , , , , );
+D4_ram_block1a7 = D4_ram_block1a6_PORT_A_data_out[1];
+
+
+--D3_ram_block1a0 is altsyncram:RAM_1_rtl_0|altsyncram_gna1:auto_generated|ram_block1a0 at M10K_X14_Y3_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D3_ram_block1a0_PORT_A_data_in = BUS(A1L210, A1L212);
+D3_ram_block1a0_PORT_A_data_in_reg = DFFE(D3_ram_block1a0_PORT_A_data_in, D3_ram_block1a0_clock_0, , , );
+D3_ram_block1a0_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D3_ram_block1a0_PORT_A_address_reg = DFFE(D3_ram_block1a0_PORT_A_address, D3_ram_block1a0_clock_0, , , );
+D3_ram_block1a0_PORT_A_write_enable = A1L70;
+D3_ram_block1a0_PORT_A_write_enable_reg = DFFE(D3_ram_block1a0_PORT_A_write_enable, D3_ram_block1a0_clock_0, , , );
+D3_ram_block1a0_PORT_A_read_enable = VCC;
+D3_ram_block1a0_PORT_A_read_enable_reg = DFFE(D3_ram_block1a0_PORT_A_read_enable, D3_ram_block1a0_clock_0, , , );
+D3_ram_block1a0_clock_0 = GLOBAL(A1L29);
+D3_ram_block1a0_PORT_A_data_out = MEMORY(D3_ram_block1a0_PORT_A_data_in_reg, , D3_ram_block1a0_PORT_A_address_reg, , D3_ram_block1a0_PORT_A_write_enable_reg, D3_ram_block1a0_PORT_A_read_enable_reg, , , , , D3_ram_block1a0_clock_0, , , , , , , );
+D3_ram_block1a0 = D3_ram_block1a0_PORT_A_data_out[0];
+
+--D3_ram_block1a1 is altsyncram:RAM_1_rtl_0|altsyncram_gna1:auto_generated|ram_block1a1 at M10K_X14_Y3_N0
+D3_ram_block1a0_PORT_A_data_in = BUS(A1L210, A1L212);
+D3_ram_block1a0_PORT_A_data_in_reg = DFFE(D3_ram_block1a0_PORT_A_data_in, D3_ram_block1a0_clock_0, , , );
+D3_ram_block1a0_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D3_ram_block1a0_PORT_A_address_reg = DFFE(D3_ram_block1a0_PORT_A_address, D3_ram_block1a0_clock_0, , , );
+D3_ram_block1a0_PORT_A_write_enable = A1L70;
+D3_ram_block1a0_PORT_A_write_enable_reg = DFFE(D3_ram_block1a0_PORT_A_write_enable, D3_ram_block1a0_clock_0, , , );
+D3_ram_block1a0_PORT_A_read_enable = VCC;
+D3_ram_block1a0_PORT_A_read_enable_reg = DFFE(D3_ram_block1a0_PORT_A_read_enable, D3_ram_block1a0_clock_0, , , );
+D3_ram_block1a0_clock_0 = GLOBAL(A1L29);
+D3_ram_block1a0_PORT_A_data_out = MEMORY(D3_ram_block1a0_PORT_A_data_in_reg, , D3_ram_block1a0_PORT_A_address_reg, , D3_ram_block1a0_PORT_A_write_enable_reg, D3_ram_block1a0_PORT_A_read_enable_reg, , , , , D3_ram_block1a0_clock_0, , , , , , , );
+D3_ram_block1a1 = D3_ram_block1a0_PORT_A_data_out[1];
+
+
+--D3_ram_block1a2 is altsyncram:RAM_1_rtl_0|altsyncram_gna1:auto_generated|ram_block1a2 at M10K_X14_Y4_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D3_ram_block1a2_PORT_A_data_in = BUS(A1L214, A1L216);
+D3_ram_block1a2_PORT_A_data_in_reg = DFFE(D3_ram_block1a2_PORT_A_data_in, D3_ram_block1a2_clock_0, , , );
+D3_ram_block1a2_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D3_ram_block1a2_PORT_A_address_reg = DFFE(D3_ram_block1a2_PORT_A_address, D3_ram_block1a2_clock_0, , , );
+D3_ram_block1a2_PORT_A_write_enable = A1L70;
+D3_ram_block1a2_PORT_A_write_enable_reg = DFFE(D3_ram_block1a2_PORT_A_write_enable, D3_ram_block1a2_clock_0, , , );
+D3_ram_block1a2_PORT_A_read_enable = VCC;
+D3_ram_block1a2_PORT_A_read_enable_reg = DFFE(D3_ram_block1a2_PORT_A_read_enable, D3_ram_block1a2_clock_0, , , );
+D3_ram_block1a2_clock_0 = GLOBAL(A1L29);
+D3_ram_block1a2_PORT_A_data_out = MEMORY(D3_ram_block1a2_PORT_A_data_in_reg, , D3_ram_block1a2_PORT_A_address_reg, , D3_ram_block1a2_PORT_A_write_enable_reg, D3_ram_block1a2_PORT_A_read_enable_reg, , , , , D3_ram_block1a2_clock_0, , , , , , , );
+D3_ram_block1a2 = D3_ram_block1a2_PORT_A_data_out[0];
+
+--D3_ram_block1a3 is altsyncram:RAM_1_rtl_0|altsyncram_gna1:auto_generated|ram_block1a3 at M10K_X14_Y4_N0
+D3_ram_block1a2_PORT_A_data_in = BUS(A1L214, A1L216);
+D3_ram_block1a2_PORT_A_data_in_reg = DFFE(D3_ram_block1a2_PORT_A_data_in, D3_ram_block1a2_clock_0, , , );
+D3_ram_block1a2_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D3_ram_block1a2_PORT_A_address_reg = DFFE(D3_ram_block1a2_PORT_A_address, D3_ram_block1a2_clock_0, , , );
+D3_ram_block1a2_PORT_A_write_enable = A1L70;
+D3_ram_block1a2_PORT_A_write_enable_reg = DFFE(D3_ram_block1a2_PORT_A_write_enable, D3_ram_block1a2_clock_0, , , );
+D3_ram_block1a2_PORT_A_read_enable = VCC;
+D3_ram_block1a2_PORT_A_read_enable_reg = DFFE(D3_ram_block1a2_PORT_A_read_enable, D3_ram_block1a2_clock_0, , , );
+D3_ram_block1a2_clock_0 = GLOBAL(A1L29);
+D3_ram_block1a2_PORT_A_data_out = MEMORY(D3_ram_block1a2_PORT_A_data_in_reg, , D3_ram_block1a2_PORT_A_address_reg, , D3_ram_block1a2_PORT_A_write_enable_reg, D3_ram_block1a2_PORT_A_read_enable_reg, , , , , D3_ram_block1a2_clock_0, , , , , , , );
+D3_ram_block1a3 = D3_ram_block1a2_PORT_A_data_out[1];
+
+
+--D3_ram_block1a4 is altsyncram:RAM_1_rtl_0|altsyncram_gna1:auto_generated|ram_block1a4 at M10K_X14_Y1_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D3_ram_block1a4_PORT_A_data_in = BUS(A1L218, A1L220);
+D3_ram_block1a4_PORT_A_data_in_reg = DFFE(D3_ram_block1a4_PORT_A_data_in, D3_ram_block1a4_clock_0, , , );
+D3_ram_block1a4_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D3_ram_block1a4_PORT_A_address_reg = DFFE(D3_ram_block1a4_PORT_A_address, D3_ram_block1a4_clock_0, , , );
+D3_ram_block1a4_PORT_A_write_enable = A1L70;
+D3_ram_block1a4_PORT_A_write_enable_reg = DFFE(D3_ram_block1a4_PORT_A_write_enable, D3_ram_block1a4_clock_0, , , );
+D3_ram_block1a4_PORT_A_read_enable = VCC;
+D3_ram_block1a4_PORT_A_read_enable_reg = DFFE(D3_ram_block1a4_PORT_A_read_enable, D3_ram_block1a4_clock_0, , , );
+D3_ram_block1a4_clock_0 = GLOBAL(A1L29);
+D3_ram_block1a4_PORT_A_data_out = MEMORY(D3_ram_block1a4_PORT_A_data_in_reg, , D3_ram_block1a4_PORT_A_address_reg, , D3_ram_block1a4_PORT_A_write_enable_reg, D3_ram_block1a4_PORT_A_read_enable_reg, , , , , D3_ram_block1a4_clock_0, , , , , , , );
+D3_ram_block1a4 = D3_ram_block1a4_PORT_A_data_out[0];
+
+--D3_ram_block1a5 is altsyncram:RAM_1_rtl_0|altsyncram_gna1:auto_generated|ram_block1a5 at M10K_X14_Y1_N0
+D3_ram_block1a4_PORT_A_data_in = BUS(A1L218, A1L220);
+D3_ram_block1a4_PORT_A_data_in_reg = DFFE(D3_ram_block1a4_PORT_A_data_in, D3_ram_block1a4_clock_0, , , );
+D3_ram_block1a4_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D3_ram_block1a4_PORT_A_address_reg = DFFE(D3_ram_block1a4_PORT_A_address, D3_ram_block1a4_clock_0, , , );
+D3_ram_block1a4_PORT_A_write_enable = A1L70;
+D3_ram_block1a4_PORT_A_write_enable_reg = DFFE(D3_ram_block1a4_PORT_A_write_enable, D3_ram_block1a4_clock_0, , , );
+D3_ram_block1a4_PORT_A_read_enable = VCC;
+D3_ram_block1a4_PORT_A_read_enable_reg = DFFE(D3_ram_block1a4_PORT_A_read_enable, D3_ram_block1a4_clock_0, , , );
+D3_ram_block1a4_clock_0 = GLOBAL(A1L29);
+D3_ram_block1a4_PORT_A_data_out = MEMORY(D3_ram_block1a4_PORT_A_data_in_reg, , D3_ram_block1a4_PORT_A_address_reg, , D3_ram_block1a4_PORT_A_write_enable_reg, D3_ram_block1a4_PORT_A_read_enable_reg, , , , , D3_ram_block1a4_clock_0, , , , , , , );
+D3_ram_block1a5 = D3_ram_block1a4_PORT_A_data_out[1];
+
+
+--D3_ram_block1a6 is altsyncram:RAM_1_rtl_0|altsyncram_gna1:auto_generated|ram_block1a6 at M10K_X14_Y2_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D3_ram_block1a6_PORT_A_data_in = BUS(A1L222, A1L224);
+D3_ram_block1a6_PORT_A_data_in_reg = DFFE(D3_ram_block1a6_PORT_A_data_in, D3_ram_block1a6_clock_0, , , );
+D3_ram_block1a6_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D3_ram_block1a6_PORT_A_address_reg = DFFE(D3_ram_block1a6_PORT_A_address, D3_ram_block1a6_clock_0, , , );
+D3_ram_block1a6_PORT_A_write_enable = A1L70;
+D3_ram_block1a6_PORT_A_write_enable_reg = DFFE(D3_ram_block1a6_PORT_A_write_enable, D3_ram_block1a6_clock_0, , , );
+D3_ram_block1a6_PORT_A_read_enable = VCC;
+D3_ram_block1a6_PORT_A_read_enable_reg = DFFE(D3_ram_block1a6_PORT_A_read_enable, D3_ram_block1a6_clock_0, , , );
+D3_ram_block1a6_clock_0 = GLOBAL(A1L29);
+D3_ram_block1a6_PORT_A_data_out = MEMORY(D3_ram_block1a6_PORT_A_data_in_reg, , D3_ram_block1a6_PORT_A_address_reg, , D3_ram_block1a6_PORT_A_write_enable_reg, D3_ram_block1a6_PORT_A_read_enable_reg, , , , , D3_ram_block1a6_clock_0, , , , , , , );
+D3_ram_block1a6 = D3_ram_block1a6_PORT_A_data_out[0];
+
+--D3_ram_block1a7 is altsyncram:RAM_1_rtl_0|altsyncram_gna1:auto_generated|ram_block1a7 at M10K_X14_Y2_N0
+D3_ram_block1a6_PORT_A_data_in = BUS(A1L222, A1L224);
+D3_ram_block1a6_PORT_A_data_in_reg = DFFE(D3_ram_block1a6_PORT_A_data_in, D3_ram_block1a6_clock_0, , , );
+D3_ram_block1a6_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D3_ram_block1a6_PORT_A_address_reg = DFFE(D3_ram_block1a6_PORT_A_address, D3_ram_block1a6_clock_0, , , );
+D3_ram_block1a6_PORT_A_write_enable = A1L70;
+D3_ram_block1a6_PORT_A_write_enable_reg = DFFE(D3_ram_block1a6_PORT_A_write_enable, D3_ram_block1a6_clock_0, , , );
+D3_ram_block1a6_PORT_A_read_enable = VCC;
+D3_ram_block1a6_PORT_A_read_enable_reg = DFFE(D3_ram_block1a6_PORT_A_read_enable, D3_ram_block1a6_clock_0, , , );
+D3_ram_block1a6_clock_0 = GLOBAL(A1L29);
+D3_ram_block1a6_PORT_A_data_out = MEMORY(D3_ram_block1a6_PORT_A_data_in_reg, , D3_ram_block1a6_PORT_A_address_reg, , D3_ram_block1a6_PORT_A_write_enable_reg, D3_ram_block1a6_PORT_A_read_enable_reg, , , , , D3_ram_block1a6_clock_0, , , , , , , );
+D3_ram_block1a7 = D3_ram_block1a6_PORT_A_data_out[1];
+
+
+--D2_ram_block1a0 is altsyncram:RAM_2_rtl_0|altsyncram_gna1:auto_generated|ram_block1a0 at M10K_X26_Y2_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D2_ram_block1a0_PORT_A_data_in = BUS(A1L226, A1L228);
+D2_ram_block1a0_PORT_A_data_in_reg = DFFE(D2_ram_block1a0_PORT_A_data_in, D2_ram_block1a0_clock_0, , , );
+D2_ram_block1a0_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D2_ram_block1a0_PORT_A_address_reg = DFFE(D2_ram_block1a0_PORT_A_address, D2_ram_block1a0_clock_0, , , );
+D2_ram_block1a0_PORT_A_write_enable = A1L91;
+D2_ram_block1a0_PORT_A_write_enable_reg = DFFE(D2_ram_block1a0_PORT_A_write_enable, D2_ram_block1a0_clock_0, , , );
+D2_ram_block1a0_PORT_A_read_enable = VCC;
+D2_ram_block1a0_PORT_A_read_enable_reg = DFFE(D2_ram_block1a0_PORT_A_read_enable, D2_ram_block1a0_clock_0, , , );
+D2_ram_block1a0_clock_0 = GLOBAL(A1L29);
+D2_ram_block1a0_PORT_A_data_out = MEMORY(D2_ram_block1a0_PORT_A_data_in_reg, , D2_ram_block1a0_PORT_A_address_reg, , D2_ram_block1a0_PORT_A_write_enable_reg, D2_ram_block1a0_PORT_A_read_enable_reg, , , , , D2_ram_block1a0_clock_0, , , , , , , );
+D2_ram_block1a0 = D2_ram_block1a0_PORT_A_data_out[0];
+
+--D2_ram_block1a1 is altsyncram:RAM_2_rtl_0|altsyncram_gna1:auto_generated|ram_block1a1 at M10K_X26_Y2_N0
+D2_ram_block1a0_PORT_A_data_in = BUS(A1L226, A1L228);
+D2_ram_block1a0_PORT_A_data_in_reg = DFFE(D2_ram_block1a0_PORT_A_data_in, D2_ram_block1a0_clock_0, , , );
+D2_ram_block1a0_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D2_ram_block1a0_PORT_A_address_reg = DFFE(D2_ram_block1a0_PORT_A_address, D2_ram_block1a0_clock_0, , , );
+D2_ram_block1a0_PORT_A_write_enable = A1L91;
+D2_ram_block1a0_PORT_A_write_enable_reg = DFFE(D2_ram_block1a0_PORT_A_write_enable, D2_ram_block1a0_clock_0, , , );
+D2_ram_block1a0_PORT_A_read_enable = VCC;
+D2_ram_block1a0_PORT_A_read_enable_reg = DFFE(D2_ram_block1a0_PORT_A_read_enable, D2_ram_block1a0_clock_0, , , );
+D2_ram_block1a0_clock_0 = GLOBAL(A1L29);
+D2_ram_block1a0_PORT_A_data_out = MEMORY(D2_ram_block1a0_PORT_A_data_in_reg, , D2_ram_block1a0_PORT_A_address_reg, , D2_ram_block1a0_PORT_A_write_enable_reg, D2_ram_block1a0_PORT_A_read_enable_reg, , , , , D2_ram_block1a0_clock_0, , , , , , , );
+D2_ram_block1a1 = D2_ram_block1a0_PORT_A_data_out[1];
+
+
+--D2_ram_block1a2 is altsyncram:RAM_2_rtl_0|altsyncram_gna1:auto_generated|ram_block1a2 at M10K_X26_Y4_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D2_ram_block1a2_PORT_A_data_in = BUS(A1L230, A1L232);
+D2_ram_block1a2_PORT_A_data_in_reg = DFFE(D2_ram_block1a2_PORT_A_data_in, D2_ram_block1a2_clock_0, , , );
+D2_ram_block1a2_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D2_ram_block1a2_PORT_A_address_reg = DFFE(D2_ram_block1a2_PORT_A_address, D2_ram_block1a2_clock_0, , , );
+D2_ram_block1a2_PORT_A_write_enable = A1L91;
+D2_ram_block1a2_PORT_A_write_enable_reg = DFFE(D2_ram_block1a2_PORT_A_write_enable, D2_ram_block1a2_clock_0, , , );
+D2_ram_block1a2_PORT_A_read_enable = VCC;
+D2_ram_block1a2_PORT_A_read_enable_reg = DFFE(D2_ram_block1a2_PORT_A_read_enable, D2_ram_block1a2_clock_0, , , );
+D2_ram_block1a2_clock_0 = GLOBAL(A1L29);
+D2_ram_block1a2_PORT_A_data_out = MEMORY(D2_ram_block1a2_PORT_A_data_in_reg, , D2_ram_block1a2_PORT_A_address_reg, , D2_ram_block1a2_PORT_A_write_enable_reg, D2_ram_block1a2_PORT_A_read_enable_reg, , , , , D2_ram_block1a2_clock_0, , , , , , , );
+D2_ram_block1a2 = D2_ram_block1a2_PORT_A_data_out[0];
+
+--D2_ram_block1a3 is altsyncram:RAM_2_rtl_0|altsyncram_gna1:auto_generated|ram_block1a3 at M10K_X26_Y4_N0
+D2_ram_block1a2_PORT_A_data_in = BUS(A1L230, A1L232);
+D2_ram_block1a2_PORT_A_data_in_reg = DFFE(D2_ram_block1a2_PORT_A_data_in, D2_ram_block1a2_clock_0, , , );
+D2_ram_block1a2_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D2_ram_block1a2_PORT_A_address_reg = DFFE(D2_ram_block1a2_PORT_A_address, D2_ram_block1a2_clock_0, , , );
+D2_ram_block1a2_PORT_A_write_enable = A1L91;
+D2_ram_block1a2_PORT_A_write_enable_reg = DFFE(D2_ram_block1a2_PORT_A_write_enable, D2_ram_block1a2_clock_0, , , );
+D2_ram_block1a2_PORT_A_read_enable = VCC;
+D2_ram_block1a2_PORT_A_read_enable_reg = DFFE(D2_ram_block1a2_PORT_A_read_enable, D2_ram_block1a2_clock_0, , , );
+D2_ram_block1a2_clock_0 = GLOBAL(A1L29);
+D2_ram_block1a2_PORT_A_data_out = MEMORY(D2_ram_block1a2_PORT_A_data_in_reg, , D2_ram_block1a2_PORT_A_address_reg, , D2_ram_block1a2_PORT_A_write_enable_reg, D2_ram_block1a2_PORT_A_read_enable_reg, , , , , D2_ram_block1a2_clock_0, , , , , , , );
+D2_ram_block1a3 = D2_ram_block1a2_PORT_A_data_out[1];
+
+
+--D2_ram_block1a4 is altsyncram:RAM_2_rtl_0|altsyncram_gna1:auto_generated|ram_block1a4 at M10K_X26_Y1_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D2_ram_block1a4_PORT_A_data_in = BUS(A1L234, A1L236);
+D2_ram_block1a4_PORT_A_data_in_reg = DFFE(D2_ram_block1a4_PORT_A_data_in, D2_ram_block1a4_clock_0, , , );
+D2_ram_block1a4_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D2_ram_block1a4_PORT_A_address_reg = DFFE(D2_ram_block1a4_PORT_A_address, D2_ram_block1a4_clock_0, , , );
+D2_ram_block1a4_PORT_A_write_enable = A1L91;
+D2_ram_block1a4_PORT_A_write_enable_reg = DFFE(D2_ram_block1a4_PORT_A_write_enable, D2_ram_block1a4_clock_0, , , );
+D2_ram_block1a4_PORT_A_read_enable = VCC;
+D2_ram_block1a4_PORT_A_read_enable_reg = DFFE(D2_ram_block1a4_PORT_A_read_enable, D2_ram_block1a4_clock_0, , , );
+D2_ram_block1a4_clock_0 = GLOBAL(A1L29);
+D2_ram_block1a4_PORT_A_data_out = MEMORY(D2_ram_block1a4_PORT_A_data_in_reg, , D2_ram_block1a4_PORT_A_address_reg, , D2_ram_block1a4_PORT_A_write_enable_reg, D2_ram_block1a4_PORT_A_read_enable_reg, , , , , D2_ram_block1a4_clock_0, , , , , , , );
+D2_ram_block1a4 = D2_ram_block1a4_PORT_A_data_out[0];
+
+--D2_ram_block1a5 is altsyncram:RAM_2_rtl_0|altsyncram_gna1:auto_generated|ram_block1a5 at M10K_X26_Y1_N0
+D2_ram_block1a4_PORT_A_data_in = BUS(A1L234, A1L236);
+D2_ram_block1a4_PORT_A_data_in_reg = DFFE(D2_ram_block1a4_PORT_A_data_in, D2_ram_block1a4_clock_0, , , );
+D2_ram_block1a4_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D2_ram_block1a4_PORT_A_address_reg = DFFE(D2_ram_block1a4_PORT_A_address, D2_ram_block1a4_clock_0, , , );
+D2_ram_block1a4_PORT_A_write_enable = A1L91;
+D2_ram_block1a4_PORT_A_write_enable_reg = DFFE(D2_ram_block1a4_PORT_A_write_enable, D2_ram_block1a4_clock_0, , , );
+D2_ram_block1a4_PORT_A_read_enable = VCC;
+D2_ram_block1a4_PORT_A_read_enable_reg = DFFE(D2_ram_block1a4_PORT_A_read_enable, D2_ram_block1a4_clock_0, , , );
+D2_ram_block1a4_clock_0 = GLOBAL(A1L29);
+D2_ram_block1a4_PORT_A_data_out = MEMORY(D2_ram_block1a4_PORT_A_data_in_reg, , D2_ram_block1a4_PORT_A_address_reg, , D2_ram_block1a4_PORT_A_write_enable_reg, D2_ram_block1a4_PORT_A_read_enable_reg, , , , , D2_ram_block1a4_clock_0, , , , , , , );
+D2_ram_block1a5 = D2_ram_block1a4_PORT_A_data_out[1];
+
+
+--D2_ram_block1a6 is altsyncram:RAM_2_rtl_0|altsyncram_gna1:auto_generated|ram_block1a6 at M10K_X26_Y3_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D2_ram_block1a6_PORT_A_data_in = BUS(A1L238, A1L240);
+D2_ram_block1a6_PORT_A_data_in_reg = DFFE(D2_ram_block1a6_PORT_A_data_in, D2_ram_block1a6_clock_0, , , );
+D2_ram_block1a6_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D2_ram_block1a6_PORT_A_address_reg = DFFE(D2_ram_block1a6_PORT_A_address, D2_ram_block1a6_clock_0, , , );
+D2_ram_block1a6_PORT_A_write_enable = A1L91;
+D2_ram_block1a6_PORT_A_write_enable_reg = DFFE(D2_ram_block1a6_PORT_A_write_enable, D2_ram_block1a6_clock_0, , , );
+D2_ram_block1a6_PORT_A_read_enable = VCC;
+D2_ram_block1a6_PORT_A_read_enable_reg = DFFE(D2_ram_block1a6_PORT_A_read_enable, D2_ram_block1a6_clock_0, , , );
+D2_ram_block1a6_clock_0 = GLOBAL(A1L29);
+D2_ram_block1a6_PORT_A_data_out = MEMORY(D2_ram_block1a6_PORT_A_data_in_reg, , D2_ram_block1a6_PORT_A_address_reg, , D2_ram_block1a6_PORT_A_write_enable_reg, D2_ram_block1a6_PORT_A_read_enable_reg, , , , , D2_ram_block1a6_clock_0, , , , , , , );
+D2_ram_block1a6 = D2_ram_block1a6_PORT_A_data_out[0];
+
+--D2_ram_block1a7 is altsyncram:RAM_2_rtl_0|altsyncram_gna1:auto_generated|ram_block1a7 at M10K_X26_Y3_N0
+D2_ram_block1a6_PORT_A_data_in = BUS(A1L238, A1L240);
+D2_ram_block1a6_PORT_A_data_in_reg = DFFE(D2_ram_block1a6_PORT_A_data_in, D2_ram_block1a6_clock_0, , , );
+D2_ram_block1a6_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D2_ram_block1a6_PORT_A_address_reg = DFFE(D2_ram_block1a6_PORT_A_address, D2_ram_block1a6_clock_0, , , );
+D2_ram_block1a6_PORT_A_write_enable = A1L91;
+D2_ram_block1a6_PORT_A_write_enable_reg = DFFE(D2_ram_block1a6_PORT_A_write_enable, D2_ram_block1a6_clock_0, , , );
+D2_ram_block1a6_PORT_A_read_enable = VCC;
+D2_ram_block1a6_PORT_A_read_enable_reg = DFFE(D2_ram_block1a6_PORT_A_read_enable, D2_ram_block1a6_clock_0, , , );
+D2_ram_block1a6_clock_0 = GLOBAL(A1L29);
+D2_ram_block1a6_PORT_A_data_out = MEMORY(D2_ram_block1a6_PORT_A_data_in_reg, , D2_ram_block1a6_PORT_A_address_reg, , D2_ram_block1a6_PORT_A_write_enable_reg, D2_ram_block1a6_PORT_A_read_enable_reg, , , , , D2_ram_block1a6_clock_0, , , , , , , );
+D2_ram_block1a7 = D2_ram_block1a6_PORT_A_data_out[1];
+
+
+--D1_ram_block1a0 is altsyncram:RAM_3_rtl_0|altsyncram_gna1:auto_generated|ram_block1a0 at M10K_X14_Y5_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D1_ram_block1a0_PORT_A_data_in = BUS(A1L242, A1L244);
+D1_ram_block1a0_PORT_A_data_in_reg = DFFE(D1_ram_block1a0_PORT_A_data_in, D1_ram_block1a0_clock_0, , , );
+D1_ram_block1a0_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D1_ram_block1a0_PORT_A_address_reg = DFFE(D1_ram_block1a0_PORT_A_address, D1_ram_block1a0_clock_0, , , );
+D1_ram_block1a0_PORT_A_write_enable = A1L114;
+D1_ram_block1a0_PORT_A_write_enable_reg = DFFE(D1_ram_block1a0_PORT_A_write_enable, D1_ram_block1a0_clock_0, , , );
+D1_ram_block1a0_PORT_A_read_enable = VCC;
+D1_ram_block1a0_PORT_A_read_enable_reg = DFFE(D1_ram_block1a0_PORT_A_read_enable, D1_ram_block1a0_clock_0, , , );
+D1_ram_block1a0_clock_0 = GLOBAL(A1L29);
+D1_ram_block1a0_PORT_A_data_out = MEMORY(D1_ram_block1a0_PORT_A_data_in_reg, , D1_ram_block1a0_PORT_A_address_reg, , D1_ram_block1a0_PORT_A_write_enable_reg, D1_ram_block1a0_PORT_A_read_enable_reg, , , , , D1_ram_block1a0_clock_0, , , , , , , );
+D1_ram_block1a0 = D1_ram_block1a0_PORT_A_data_out[0];
+
+--D1_ram_block1a1 is altsyncram:RAM_3_rtl_0|altsyncram_gna1:auto_generated|ram_block1a1 at M10K_X14_Y5_N0
+D1_ram_block1a0_PORT_A_data_in = BUS(A1L242, A1L244);
+D1_ram_block1a0_PORT_A_data_in_reg = DFFE(D1_ram_block1a0_PORT_A_data_in, D1_ram_block1a0_clock_0, , , );
+D1_ram_block1a0_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D1_ram_block1a0_PORT_A_address_reg = DFFE(D1_ram_block1a0_PORT_A_address, D1_ram_block1a0_clock_0, , , );
+D1_ram_block1a0_PORT_A_write_enable = A1L114;
+D1_ram_block1a0_PORT_A_write_enable_reg = DFFE(D1_ram_block1a0_PORT_A_write_enable, D1_ram_block1a0_clock_0, , , );
+D1_ram_block1a0_PORT_A_read_enable = VCC;
+D1_ram_block1a0_PORT_A_read_enable_reg = DFFE(D1_ram_block1a0_PORT_A_read_enable, D1_ram_block1a0_clock_0, , , );
+D1_ram_block1a0_clock_0 = GLOBAL(A1L29);
+D1_ram_block1a0_PORT_A_data_out = MEMORY(D1_ram_block1a0_PORT_A_data_in_reg, , D1_ram_block1a0_PORT_A_address_reg, , D1_ram_block1a0_PORT_A_write_enable_reg, D1_ram_block1a0_PORT_A_read_enable_reg, , , , , D1_ram_block1a0_clock_0, , , , , , , );
+D1_ram_block1a1 = D1_ram_block1a0_PORT_A_data_out[1];
+
+
+--D1_ram_block1a2 is altsyncram:RAM_3_rtl_0|altsyncram_gna1:auto_generated|ram_block1a2 at M10K_X26_Y5_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D1_ram_block1a2_PORT_A_data_in = BUS(A1L246, A1L248);
+D1_ram_block1a2_PORT_A_data_in_reg = DFFE(D1_ram_block1a2_PORT_A_data_in, D1_ram_block1a2_clock_0, , , );
+D1_ram_block1a2_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D1_ram_block1a2_PORT_A_address_reg = DFFE(D1_ram_block1a2_PORT_A_address, D1_ram_block1a2_clock_0, , , );
+D1_ram_block1a2_PORT_A_write_enable = A1L114;
+D1_ram_block1a2_PORT_A_write_enable_reg = DFFE(D1_ram_block1a2_PORT_A_write_enable, D1_ram_block1a2_clock_0, , , );
+D1_ram_block1a2_PORT_A_read_enable = VCC;
+D1_ram_block1a2_PORT_A_read_enable_reg = DFFE(D1_ram_block1a2_PORT_A_read_enable, D1_ram_block1a2_clock_0, , , );
+D1_ram_block1a2_clock_0 = GLOBAL(A1L29);
+D1_ram_block1a2_PORT_A_data_out = MEMORY(D1_ram_block1a2_PORT_A_data_in_reg, , D1_ram_block1a2_PORT_A_address_reg, , D1_ram_block1a2_PORT_A_write_enable_reg, D1_ram_block1a2_PORT_A_read_enable_reg, , , , , D1_ram_block1a2_clock_0, , , , , , , );
+D1_ram_block1a2 = D1_ram_block1a2_PORT_A_data_out[0];
+
+--D1_ram_block1a3 is altsyncram:RAM_3_rtl_0|altsyncram_gna1:auto_generated|ram_block1a3 at M10K_X26_Y5_N0
+D1_ram_block1a2_PORT_A_data_in = BUS(A1L246, A1L248);
+D1_ram_block1a2_PORT_A_data_in_reg = DFFE(D1_ram_block1a2_PORT_A_data_in, D1_ram_block1a2_clock_0, , , );
+D1_ram_block1a2_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D1_ram_block1a2_PORT_A_address_reg = DFFE(D1_ram_block1a2_PORT_A_address, D1_ram_block1a2_clock_0, , , );
+D1_ram_block1a2_PORT_A_write_enable = A1L114;
+D1_ram_block1a2_PORT_A_write_enable_reg = DFFE(D1_ram_block1a2_PORT_A_write_enable, D1_ram_block1a2_clock_0, , , );
+D1_ram_block1a2_PORT_A_read_enable = VCC;
+D1_ram_block1a2_PORT_A_read_enable_reg = DFFE(D1_ram_block1a2_PORT_A_read_enable, D1_ram_block1a2_clock_0, , , );
+D1_ram_block1a2_clock_0 = GLOBAL(A1L29);
+D1_ram_block1a2_PORT_A_data_out = MEMORY(D1_ram_block1a2_PORT_A_data_in_reg, , D1_ram_block1a2_PORT_A_address_reg, , D1_ram_block1a2_PORT_A_write_enable_reg, D1_ram_block1a2_PORT_A_read_enable_reg, , , , , D1_ram_block1a2_clock_0, , , , , , , );
+D1_ram_block1a3 = D1_ram_block1a2_PORT_A_data_out[1];
+
+
+--D1_ram_block1a4 is altsyncram:RAM_3_rtl_0|altsyncram_gna1:auto_generated|ram_block1a4 at M10K_X14_Y6_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D1_ram_block1a4_PORT_A_data_in = BUS(A1L250, A1L252);
+D1_ram_block1a4_PORT_A_data_in_reg = DFFE(D1_ram_block1a4_PORT_A_data_in, D1_ram_block1a4_clock_0, , , );
+D1_ram_block1a4_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D1_ram_block1a4_PORT_A_address_reg = DFFE(D1_ram_block1a4_PORT_A_address, D1_ram_block1a4_clock_0, , , );
+D1_ram_block1a4_PORT_A_write_enable = A1L114;
+D1_ram_block1a4_PORT_A_write_enable_reg = DFFE(D1_ram_block1a4_PORT_A_write_enable, D1_ram_block1a4_clock_0, , , );
+D1_ram_block1a4_PORT_A_read_enable = VCC;
+D1_ram_block1a4_PORT_A_read_enable_reg = DFFE(D1_ram_block1a4_PORT_A_read_enable, D1_ram_block1a4_clock_0, , , );
+D1_ram_block1a4_clock_0 = GLOBAL(A1L29);
+D1_ram_block1a4_PORT_A_data_out = MEMORY(D1_ram_block1a4_PORT_A_data_in_reg, , D1_ram_block1a4_PORT_A_address_reg, , D1_ram_block1a4_PORT_A_write_enable_reg, D1_ram_block1a4_PORT_A_read_enable_reg, , , , , D1_ram_block1a4_clock_0, , , , , , , );
+D1_ram_block1a4 = D1_ram_block1a4_PORT_A_data_out[0];
+
+--D1_ram_block1a5 is altsyncram:RAM_3_rtl_0|altsyncram_gna1:auto_generated|ram_block1a5 at M10K_X14_Y6_N0
+D1_ram_block1a4_PORT_A_data_in = BUS(A1L250, A1L252);
+D1_ram_block1a4_PORT_A_data_in_reg = DFFE(D1_ram_block1a4_PORT_A_data_in, D1_ram_block1a4_clock_0, , , );
+D1_ram_block1a4_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D1_ram_block1a4_PORT_A_address_reg = DFFE(D1_ram_block1a4_PORT_A_address, D1_ram_block1a4_clock_0, , , );
+D1_ram_block1a4_PORT_A_write_enable = A1L114;
+D1_ram_block1a4_PORT_A_write_enable_reg = DFFE(D1_ram_block1a4_PORT_A_write_enable, D1_ram_block1a4_clock_0, , , );
+D1_ram_block1a4_PORT_A_read_enable = VCC;
+D1_ram_block1a4_PORT_A_read_enable_reg = DFFE(D1_ram_block1a4_PORT_A_read_enable, D1_ram_block1a4_clock_0, , , );
+D1_ram_block1a4_clock_0 = GLOBAL(A1L29);
+D1_ram_block1a4_PORT_A_data_out = MEMORY(D1_ram_block1a4_PORT_A_data_in_reg, , D1_ram_block1a4_PORT_A_address_reg, , D1_ram_block1a4_PORT_A_write_enable_reg, D1_ram_block1a4_PORT_A_read_enable_reg, , , , , D1_ram_block1a4_clock_0, , , , , , , );
+D1_ram_block1a5 = D1_ram_block1a4_PORT_A_data_out[1];
+
+
+--D1_ram_block1a6 is altsyncram:RAM_3_rtl_0|altsyncram_gna1:auto_generated|ram_block1a6 at M10K_X26_Y6_N0
+--RAM Block Operation Mode: Single Port
+--Port A Depth: 4096, Port A Width: 2
+--Port A Logical Depth: 4096, Port A Logical Width: 8
+--Port A Input: Registered, Port A Output: Un-registered
+D1_ram_block1a6_PORT_A_data_in = BUS(A1L254, A1L256);
+D1_ram_block1a6_PORT_A_data_in_reg = DFFE(D1_ram_block1a6_PORT_A_data_in, D1_ram_block1a6_clock_0, , , );
+D1_ram_block1a6_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D1_ram_block1a6_PORT_A_address_reg = DFFE(D1_ram_block1a6_PORT_A_address, D1_ram_block1a6_clock_0, , , );
+D1_ram_block1a6_PORT_A_write_enable = A1L114;
+D1_ram_block1a6_PORT_A_write_enable_reg = DFFE(D1_ram_block1a6_PORT_A_write_enable, D1_ram_block1a6_clock_0, , , );
+D1_ram_block1a6_PORT_A_read_enable = VCC;
+D1_ram_block1a6_PORT_A_read_enable_reg = DFFE(D1_ram_block1a6_PORT_A_read_enable, D1_ram_block1a6_clock_0, , , );
+D1_ram_block1a6_clock_0 = GLOBAL(A1L29);
+D1_ram_block1a6_PORT_A_data_out = MEMORY(D1_ram_block1a6_PORT_A_data_in_reg, , D1_ram_block1a6_PORT_A_address_reg, , D1_ram_block1a6_PORT_A_write_enable_reg, D1_ram_block1a6_PORT_A_read_enable_reg, , , , , D1_ram_block1a6_clock_0, , , , , , , );
+D1_ram_block1a6 = D1_ram_block1a6_PORT_A_data_out[0];
+
+--D1_ram_block1a7 is altsyncram:RAM_3_rtl_0|altsyncram_gna1:auto_generated|ram_block1a7 at M10K_X26_Y6_N0
+D1_ram_block1a6_PORT_A_data_in = BUS(A1L254, A1L256);
+D1_ram_block1a6_PORT_A_data_in_reg = DFFE(D1_ram_block1a6_PORT_A_data_in, D1_ram_block1a6_clock_0, , , );
+D1_ram_block1a6_PORT_A_address = BUS(A1L3, A1L5, A1L7, A1L9, A1L11, A1L13, A1L15, A1L17, A1L19, A1L21, A1L23, A1L25);
+D1_ram_block1a6_PORT_A_address_reg = DFFE(D1_ram_block1a6_PORT_A_address, D1_ram_block1a6_clock_0, , , );
+D1_ram_block1a6_PORT_A_write_enable = A1L114;
+D1_ram_block1a6_PORT_A_write_enable_reg = DFFE(D1_ram_block1a6_PORT_A_write_enable, D1_ram_block1a6_clock_0, , , );
+D1_ram_block1a6_PORT_A_read_enable = VCC;
+D1_ram_block1a6_PORT_A_read_enable_reg = DFFE(D1_ram_block1a6_PORT_A_read_enable, D1_ram_block1a6_clock_0, , , );
+D1_ram_block1a6_clock_0 = GLOBAL(A1L29);
+D1_ram_block1a6_PORT_A_data_out = MEMORY(D1_ram_block1a6_PORT_A_data_in_reg, , D1_ram_block1a6_PORT_A_address_reg, , D1_ram_block1a6_PORT_A_write_enable_reg, D1_ram_block1a6_PORT_A_read_enable_reg, , , , , D1_ram_block1a6_clock_0, , , , , , , );
+D1_ram_block1a7 = D1_ram_block1a6_PORT_A_data_out[1];
+
+
+--A1L31Q is RAM_0~21 at FF_X15_Y2_N34
+--register power-up is low
+
+A1L31Q = DFFEAS(A1L32, GLOBAL(A1L29), A1L182,  ,  ,  ,  ,  ,  );
+
+
+--A1L33Q is RAM_0~22 at FF_X6_Y2_N32
+--register power-up is low
+
+A1L33Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L50, A1L194,  ,  , VCC);
+
+
+--A1L41 is RAM_0~30 at MLABCELL_X6_Y2_N30
+A1L41 = ( A1L33Q & ( A1L31Q & ( D4_ram_block1a0 ) ) ) # ( !A1L33Q & ( A1L31Q & ( D4_ram_block1a0 ) ) ) # ( A1L33Q & ( !A1L31Q ) );
+
+
+--A1L34Q is RAM_0~23 at FF_X6_Y2_N41
+--register power-up is low
+
+A1L34Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L50, A1L196,  ,  , VCC);
+
+
+--A1L42 is RAM_0~31 at MLABCELL_X6_Y2_N39
+A1L42 = ( A1L34Q & ( A1L31Q & ( D4_ram_block1a1 ) ) ) # ( !A1L34Q & ( A1L31Q & ( D4_ram_block1a1 ) ) ) # ( A1L34Q & ( !A1L31Q ) );
+
+
+--A1L35Q is RAM_0~24 at FF_X6_Y2_N14
+--register power-up is low
+
+A1L35Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L50, A1L198,  ,  , VCC);
+
+
+--A1L43 is RAM_0~32 at MLABCELL_X6_Y2_N12
+A1L43 = ( A1L35Q & ( A1L31Q & ( D4_ram_block1a2 ) ) ) # ( !A1L35Q & ( A1L31Q & ( D4_ram_block1a2 ) ) ) # ( A1L35Q & ( !A1L31Q ) );
+
+
+--A1L36Q is RAM_0~25 at FF_X6_Y2_N23
+--register power-up is low
+
+A1L36Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L50, A1L200,  ,  , VCC);
+
+
+--A1L44 is RAM_0~33 at MLABCELL_X6_Y2_N21
+A1L44 = ( A1L36Q & ( A1L31Q & ( D4_ram_block1a3 ) ) ) # ( !A1L36Q & ( A1L31Q & ( D4_ram_block1a3 ) ) ) # ( A1L36Q & ( !A1L31Q ) );
+
+
+--A1L37Q is RAM_0~26 at FF_X6_Y2_N26
+--register power-up is low
+
+A1L37Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L50, A1L202,  ,  , VCC);
+
+
+--A1L45 is RAM_0~34 at MLABCELL_X6_Y2_N24
+A1L45 = ( A1L37Q & ( A1L31Q & ( D4_ram_block1a4 ) ) ) # ( !A1L37Q & ( A1L31Q & ( D4_ram_block1a4 ) ) ) # ( A1L37Q & ( !A1L31Q ) );
+
+
+--A1L38Q is RAM_0~27 at FF_X6_Y2_N5
+--register power-up is low
+
+A1L38Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L50, A1L204,  ,  , VCC);
+
+
+--A1L46 is RAM_0~35 at MLABCELL_X6_Y2_N3
+A1L46 = ( A1L38Q & ( A1L31Q & ( D4_ram_block1a5 ) ) ) # ( !A1L38Q & ( A1L31Q & ( D4_ram_block1a5 ) ) ) # ( A1L38Q & ( !A1L31Q ) );
+
+
+--A1L39Q is RAM_0~28 at FF_X6_Y2_N8
+--register power-up is low
+
+A1L39Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L50, A1L206,  ,  , VCC);
+
+
+--A1L47 is RAM_0~36 at MLABCELL_X6_Y2_N6
+A1L47 = ( A1L39Q & ( A1L31Q & ( D4_ram_block1a6 ) ) ) # ( !A1L39Q & ( A1L31Q & ( D4_ram_block1a6 ) ) ) # ( A1L39Q & ( !A1L31Q ) );
+
+
+--A1L40Q is RAM_0~29 at FF_X6_Y2_N47
+--register power-up is low
+
+A1L40Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L50, A1L208,  ,  , VCC);
+
+
+--A1L48 is RAM_0~37 at MLABCELL_X6_Y2_N45
+A1L48 = ( A1L40Q & ( A1L31Q & ( D4_ram_block1a7 ) ) ) # ( !A1L40Q & ( A1L31Q & ( D4_ram_block1a7 ) ) ) # ( A1L40Q & ( !A1L31Q ) );
+
+
+--A1L52Q is RAM_1~21 at FF_X15_Y2_N8
+--register power-up is low
+
+A1L52Q = DFFEAS(A1L53, GLOBAL(A1L29), A1L182,  ,  ,  ,  ,  ,  );
+
+
+--A1L54Q is RAM_1~22 at FF_X15_Y2_N47
+--register power-up is low
+
+A1L54Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L71, A1L210,  ,  , VCC);
+
+
+--A1L62 is RAM_1~30 at MLABCELL_X15_Y2_N45
+A1L62 = (!A1L52Q & ((A1L54Q))) # (A1L52Q & (D3_ram_block1a0));
+
+
+--A1L55Q is RAM_1~23 at FF_X15_Y2_N20
+--register power-up is low
+
+A1L55Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L71, A1L212,  ,  , VCC);
+
+
+--A1L63 is RAM_1~31 at MLABCELL_X15_Y2_N18
+A1L63 = (!A1L52Q & ((A1L55Q))) # (A1L52Q & (D3_ram_block1a1));
+
+
+--A1L56Q is RAM_1~24 at FF_X15_Y2_N23
+--register power-up is low
+
+A1L56Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L71, A1L214,  ,  , VCC);
+
+
+--A1L64 is RAM_1~32 at MLABCELL_X15_Y2_N21
+A1L64 = (!A1L52Q & ((A1L56Q))) # (A1L52Q & (D3_ram_block1a2));
+
+
+--A1L57Q is RAM_1~25 at FF_X15_Y2_N26
+--register power-up is low
+
+A1L57Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L71, A1L216,  ,  , VCC);
+
+
+--A1L65 is RAM_1~33 at MLABCELL_X15_Y2_N24
+A1L65 = (!A1L52Q & ((A1L57Q))) # (A1L52Q & (D3_ram_block1a3));
+
+
+--A1L58Q is RAM_1~26 at FF_X15_Y2_N29
+--register power-up is low
+
+A1L58Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L71, A1L218,  ,  , VCC);
+
+
+--A1L66 is RAM_1~34 at MLABCELL_X15_Y2_N27
+A1L66 = (!A1L52Q & ((A1L58Q))) # (A1L52Q & (D3_ram_block1a4));
+
+
+--A1L59Q is RAM_1~27 at FF_X15_Y2_N2
+--register power-up is low
+
+A1L59Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L71, A1L220,  ,  , VCC);
+
+
+--A1L67 is RAM_1~35 at MLABCELL_X15_Y2_N0
+A1L67 = (!A1L52Q & ((A1L59Q))) # (A1L52Q & (D3_ram_block1a5));
+
+
+--A1L60Q is RAM_1~28 at FF_X15_Y2_N44
+--register power-up is low
+
+A1L60Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L71, A1L222,  ,  , VCC);
+
+
+--A1L68 is RAM_1~36 at MLABCELL_X15_Y2_N42
+A1L68 = ( D3_ram_block1a6 & ( (A1L60Q) # (A1L52Q) ) ) # ( !D3_ram_block1a6 & ( (!A1L52Q & A1L60Q) ) );
+
+
+--A1L61Q is RAM_1~29 at FF_X15_Y2_N5
+--register power-up is low
+
+A1L61Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L71, A1L224,  ,  , VCC);
+
+
+--A1L69 is RAM_1~37 at MLABCELL_X15_Y2_N3
+A1L69 = (!A1L52Q & ((A1L61Q))) # (A1L52Q & (D3_ram_block1a7));
+
+
+--A1L73Q is RAM_2~21 at FF_X27_Y2_N32
+--register power-up is low
+
+A1L73Q = DFFEAS(A1L74, GLOBAL(A1L29), A1L182,  ,  ,  ,  ,  ,  );
+
+
+--A1L75Q is RAM_2~22 at FF_X27_Y2_N38
+--register power-up is low
+
+A1L75Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L92, A1L226,  ,  , VCC);
+
+
+--A1L83 is RAM_2~30 at LABCELL_X27_Y2_N36
+A1L83 = (!A1L73Q & ((A1L75Q))) # (A1L73Q & (D2_ram_block1a0));
+
+
+--A1L76Q is RAM_2~23 at FF_X27_Y2_N41
+--register power-up is low
+
+A1L76Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L92, A1L228,  ,  , VCC);
+
+
+--A1L84 is RAM_2~31 at LABCELL_X27_Y2_N39
+A1L84 = (!A1L73Q & ((A1L76Q))) # (A1L73Q & (D2_ram_block1a1));
+
+
+--A1L77Q is RAM_2~24 at FF_X27_Y2_N14
+--register power-up is low
+
+A1L77Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L92, A1L230,  ,  , VCC);
+
+
+--A1L85 is RAM_2~32 at LABCELL_X27_Y2_N12
+A1L85 = (!A1L73Q & ((A1L77Q))) # (A1L73Q & (D2_ram_block1a2));
+
+
+--A1L78Q is RAM_2~25 at FF_X27_Y2_N17
+--register power-up is low
+
+A1L78Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L92, A1L232,  ,  , VCC);
+
+
+--A1L86 is RAM_2~33 at LABCELL_X27_Y2_N15
+A1L86 = (!A1L73Q & ((A1L78Q))) # (A1L73Q & (D2_ram_block1a3));
+
+
+--A1L79Q is RAM_2~26 at FF_X27_Y2_N20
+--register power-up is low
+
+A1L79Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L92, A1L234,  ,  , VCC);
+
+
+--A1L87 is RAM_2~34 at LABCELL_X27_Y2_N18
+A1L87 = (!A1L73Q & ((A1L79Q))) # (A1L73Q & (D2_ram_block1a4));
+
+
+--A1L80Q is RAM_2~27 at FF_X27_Y2_N23
+--register power-up is low
+
+A1L80Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L92, A1L236,  ,  , VCC);
+
+
+--A1L88 is RAM_2~35 at LABCELL_X27_Y2_N21
+A1L88 = ( D2_ram_block1a5 & ( (A1L80Q) # (A1L73Q) ) ) # ( !D2_ram_block1a5 & ( (!A1L73Q & A1L80Q) ) );
+
+
+--A1L81Q is RAM_2~28 at FF_X27_Y2_N26
+--register power-up is low
+
+A1L81Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L92, A1L238,  ,  , VCC);
+
+
+--A1L89 is RAM_2~36 at LABCELL_X27_Y2_N24
+A1L89 = (!A1L73Q & ((A1L81Q))) # (A1L73Q & (D2_ram_block1a6));
+
+
+--A1L82Q is RAM_2~29 at FF_X27_Y2_N29
+--register power-up is low
+
+A1L82Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L92, A1L240,  ,  , VCC);
+
+
+--A1L90 is RAM_2~37 at LABCELL_X27_Y2_N27
+A1L90 = (!A1L73Q & ((A1L82Q))) # (A1L73Q & (D2_ram_block1a7));
+
+
+--A1L94Q is RAM_3~21 at FF_X27_Y2_N5
+--register power-up is low
+
+A1L94Q = DFFEAS(A1L95, GLOBAL(A1L29), A1L182,  ,  ,  ,  ,  ,  );
+
+
+--A1L96Q is RAM_3~22 at FF_X27_Y2_N8
+--register power-up is low
+
+A1L96Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L115, A1L242,  ,  , VCC);
+
+
+--A1L104 is RAM_3~30 at LABCELL_X27_Y2_N6
+A1L104 = (!A1L94Q & ((A1L96Q))) # (A1L94Q & (D1_ram_block1a0));
+
+
+--A1L97Q is RAM_3~23 at FF_X27_Y2_N11
+--register power-up is low
+
+A1L97Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L115, A1L244,  ,  , VCC);
+
+
+--A1L105 is RAM_3~31 at LABCELL_X27_Y2_N9
+A1L105 = ( D1_ram_block1a1 & ( (A1L97Q) # (A1L94Q) ) ) # ( !D1_ram_block1a1 & ( (!A1L94Q & A1L97Q) ) );
+
+
+--A1L98Q is RAM_3~24 at FF_X27_Y2_N44
+--register power-up is low
+
+A1L98Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L115, A1L246,  ,  , VCC);
+
+
+--A1L106 is RAM_3~32 at LABCELL_X27_Y2_N42
+A1L106 = (!A1L94Q & ((A1L98Q))) # (A1L94Q & (D1_ram_block1a2));
+
+
+--A1L99Q is RAM_3~25 at FF_X27_Y2_N47
+--register power-up is low
+
+A1L99Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L115, A1L248,  ,  , VCC);
+
+
+--A1L107 is RAM_3~33 at LABCELL_X27_Y2_N45
+A1L107 = (!A1L94Q & ((A1L99Q))) # (A1L94Q & (D1_ram_block1a3));
+
+
+--A1L100Q is RAM_3~26 at FF_X27_Y2_N50
+--register power-up is low
+
+A1L100Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L115, A1L250,  ,  , VCC);
+
+
+--A1L108 is RAM_3~34 at LABCELL_X27_Y2_N48
+A1L108 = ( D1_ram_block1a4 & ( (A1L100Q) # (A1L94Q) ) ) # ( !D1_ram_block1a4 & ( (!A1L94Q & A1L100Q) ) );
+
+
+--A1L101Q is RAM_3~27 at FF_X27_Y2_N53
+--register power-up is low
+
+A1L101Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L115, A1L252,  ,  , VCC);
+
+
+--A1L109 is RAM_3~35 at LABCELL_X27_Y2_N51
+A1L109 = (!A1L94Q & ((A1L101Q))) # (A1L94Q & (D1_ram_block1a5));
+
+
+--A1L102Q is RAM_3~28 at FF_X27_Y2_N56
+--register power-up is low
+
+A1L102Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L115, A1L254,  ,  , VCC);
+
+
+--A1L110 is RAM_3~36 at LABCELL_X27_Y2_N54
+A1L110 = (!A1L94Q & ((A1L102Q))) # (A1L94Q & (D1_ram_block1a6));
+
+
+--A1L103Q is RAM_3~29 at FF_X27_Y2_N59
+--register power-up is low
+
+A1L103Q = DFFEAS( , GLOBAL(A1L29),  ,  , A1L115, A1L256,  ,  , VCC);
+
+
+--A1L111 is RAM_3~37 at LABCELL_X27_Y2_N57
+A1L111 = (!A1L94Q & ((A1L103Q))) # (A1L94Q & (D1_ram_block1a7));
+
+
+--A1L49 is RAM_0~38 at MLABCELL_X15_Y2_N39
+A1L49 = ( !A1L185 & ( A1L182 ) );
+
+
+--A1L112 is RAM_3~38 at MLABCELL_X15_Y2_N12
+A1L112 = ( !A1L5 & ( (!A1L7 & (!A1L11 & (!A1L3 & !A1L9))) ) );
+
+
+--A1L113 is RAM_3~39 at MLABCELL_X15_Y2_N48
+A1L113 = ( !A1L21 & ( (!A1L19 & (!A1L15 & (!A1L23 & !A1L17))) ) );
+
+
+--A1L50 is RAM_0~39 at MLABCELL_X15_Y2_N54
+A1L50 = ( A1L49 & ( (A1L113 & (A1L112 & (!A1L13 & !A1L25))) ) );
+
+
+--A1L70 is RAM_1~38 at MLABCELL_X15_Y2_N15
+A1L70 = ( !A1L187 & ( A1L182 ) );
+
+
+--A1L71 is RAM_1~39 at MLABCELL_X15_Y2_N9
+A1L71 = ( !A1L25 & ( (A1L113 & (A1L70 & (A1L112 & !A1L13))) ) );
+
+
+--A1L91 is RAM_2~38 at MLABCELL_X15_Y2_N51
+A1L91 = ( !A1L189 & ( A1L182 ) );
+
+
+--A1L92 is RAM_2~39 at MLABCELL_X15_Y2_N57
+A1L92 = ( A1L91 & ( (A1L113 & (A1L112 & (!A1L25 & !A1L13))) ) );
+
+
+--A1L114 is RAM_3~40 at MLABCELL_X15_Y2_N30
+A1L114 = ( !A1L191 & ( A1L182 ) );
+
+
+--A1L115 is RAM_3~41 at MLABCELL_X15_Y2_N36
+A1L115 = ( A1L114 & ( (A1L113 & (A1L112 & (!A1L25 & !A1L13))) ) );
+
+
+--A1L118 is readdata[0]~output at IOOBUF_X6_Y0_N53
+A1L118 = OUTPUT_BUFFER.O(.I(A1L41), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[0] is readdata[0] at PIN_AH4
+readdata[0] = OUTPUT();
+
+
+--A1L120 is readdata[1]~output at IOOBUF_X6_Y0_N2
+A1L120 = OUTPUT_BUFFER.O(.I(A1L42), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[1] is readdata[1] at PIN_AD7
+readdata[1] = OUTPUT();
+
+
+--A1L122 is readdata[2]~output at IOOBUF_X10_Y0_N42
+A1L122 = OUTPUT_BUFFER.O(.I(A1L43), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[2] is readdata[2] at PIN_AG1
+readdata[2] = OUTPUT();
+
+
+--A1L124 is readdata[3]~output at IOOBUF_X2_Y0_N59
+A1L124 = OUTPUT_BUFFER.O(.I(A1L44), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[3] is readdata[3] at PIN_AE12
+readdata[3] = OUTPUT();
+
+
+--A1L126 is readdata[4]~output at IOOBUF_X8_Y0_N2
+A1L126 = OUTPUT_BUFFER.O(.I(A1L45), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[4] is readdata[4] at PIN_AF4
+readdata[4] = OUTPUT();
+
+
+--A1L128 is readdata[5]~output at IOOBUF_X6_Y0_N36
+A1L128 = OUTPUT_BUFFER.O(.I(A1L46), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[5] is readdata[5] at PIN_AG3
+readdata[5] = OUTPUT();
+
+
+--A1L130 is readdata[6]~output at IOOBUF_X8_Y0_N53
+A1L130 = OUTPUT_BUFFER.O(.I(A1L47), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[6] is readdata[6] at PIN_AG8
+readdata[6] = OUTPUT();
+
+
+--A1L132 is readdata[7]~output at IOOBUF_X8_Y0_N36
+A1L132 = OUTPUT_BUFFER.O(.I(A1L48), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[7] is readdata[7] at PIN_AF9
+readdata[7] = OUTPUT();
+
+
+--A1L134 is readdata[8]~output at IOOBUF_X22_Y0_N36
+A1L134 = OUTPUT_BUFFER.O(.I(A1L62), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[8] is readdata[8] at PIN_AJ4
+readdata[8] = OUTPUT();
+
+
+--A1L136 is readdata[9]~output at IOOBUF_X18_Y0_N42
+A1L136 = OUTPUT_BUFFER.O(.I(A1L63), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[9] is readdata[9] at PIN_AF11
+readdata[9] = OUTPUT();
+
+
+--A1L138 is readdata[10]~output at IOOBUF_X20_Y0_N19
+A1L138 = OUTPUT_BUFFER.O(.I(A1L64), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[10] is readdata[10] at PIN_AB13
+readdata[10] = OUTPUT();
+
+
+--A1L140 is readdata[11]~output at IOOBUF_X18_Y0_N93
+A1L140 = OUTPUT_BUFFER.O(.I(A1L65), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[11] is readdata[11] at PIN_AH9
+readdata[11] = OUTPUT();
+
+
+--A1L142 is readdata[12]~output at IOOBUF_X16_Y0_N2
+A1L142 = OUTPUT_BUFFER.O(.I(A1L66), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[12] is readdata[12] at PIN_AC12
+readdata[12] = OUTPUT();
+
+
+--A1L144 is readdata[13]~output at IOOBUF_X18_Y0_N59
+A1L144 = OUTPUT_BUFFER.O(.I(A1L67), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[13] is readdata[13] at PIN_AG11
+readdata[13] = OUTPUT();
+
+
+--A1L146 is readdata[14]~output at IOOBUF_X18_Y0_N76
+A1L146 = OUTPUT_BUFFER.O(.I(A1L68), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[14] is readdata[14] at PIN_AG10
+readdata[14] = OUTPUT();
+
+
+--A1L148 is readdata[15]~output at IOOBUF_X16_Y0_N36
+A1L148 = OUTPUT_BUFFER.O(.I(A1L69), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[15] is readdata[15] at PIN_AG2
+readdata[15] = OUTPUT();
+
+
+--A1L150 is readdata[16]~output at IOOBUF_X32_Y0_N36
+A1L150 = OUTPUT_BUFFER.O(.I(A1L83), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[16] is readdata[16] at PIN_AH7
+readdata[16] = OUTPUT();
+
+
+--A1L152 is readdata[17]~output at IOOBUF_X30_Y0_N36
+A1L152 = OUTPUT_BUFFER.O(.I(A1L84), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[17] is readdata[17] at PIN_AJ9
+readdata[17] = OUTPUT();
+
+
+--A1L154 is readdata[18]~output at IOOBUF_X32_Y0_N19
+A1L154 = OUTPUT_BUFFER.O(.I(A1L85), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[18] is readdata[18] at PIN_AF15
+readdata[18] = OUTPUT();
+
+
+--A1L156 is readdata[19]~output at IOOBUF_X34_Y0_N76
+A1L156 = OUTPUT_BUFFER.O(.I(A1L86), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[19] is readdata[19] at PIN_AH10
+readdata[19] = OUTPUT();
+
+
+--A1L158 is readdata[20]~output at IOOBUF_X38_Y0_N36
+A1L158 = OUTPUT_BUFFER.O(.I(A1L87), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[20] is readdata[20] at PIN_AH12
+readdata[20] = OUTPUT();
+
+
+--A1L160 is readdata[21]~output at IOOBUF_X36_Y0_N53
+A1L160 = OUTPUT_BUFFER.O(.I(A1L88), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[21] is readdata[21] at PIN_AK13
+readdata[21] = OUTPUT();
+
+
+--A1L162 is readdata[22]~output at IOOBUF_X38_Y0_N53
+A1L162 = OUTPUT_BUFFER.O(.I(A1L89), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[22] is readdata[22] at PIN_AJ12
+readdata[22] = OUTPUT();
+
+
+--A1L164 is readdata[23]~output at IOOBUF_X40_Y0_N36
+A1L164 = OUTPUT_BUFFER.O(.I(A1L90), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[23] is readdata[23] at PIN_AJ14
+readdata[23] = OUTPUT();
+
+
+--A1L166 is readdata[24]~output at IOOBUF_X32_Y0_N2
+A1L166 = OUTPUT_BUFFER.O(.I(A1L104), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[24] is readdata[24] at PIN_AF14
+readdata[24] = OUTPUT();
+
+
+--A1L168 is readdata[25]~output at IOOBUF_X36_Y0_N36
+A1L168 = OUTPUT_BUFFER.O(.I(A1L105), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[25] is readdata[25] at PIN_AK12
+readdata[25] = OUTPUT();
+
+
+--A1L170 is readdata[26]~output at IOOBUF_X40_Y0_N2
+A1L170 = OUTPUT_BUFFER.O(.I(A1L106), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[26] is readdata[26] at PIN_W15
+readdata[26] = OUTPUT();
+
+
+--A1L172 is readdata[27]~output at IOOBUF_X30_Y0_N19
+A1L172 = OUTPUT_BUFFER.O(.I(A1L107), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[27] is readdata[27] at PIN_AH14
+readdata[27] = OUTPUT();
+
+
+--A1L174 is readdata[28]~output at IOOBUF_X38_Y0_N19
+A1L174 = OUTPUT_BUFFER.O(.I(A1L108), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[28] is readdata[28] at PIN_AH15
+readdata[28] = OUTPUT();
+
+
+--A1L176 is readdata[29]~output at IOOBUF_X34_Y0_N93
+A1L176 = OUTPUT_BUFFER.O(.I(A1L109), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[29] is readdata[29] at PIN_AJ10
+readdata[29] = OUTPUT();
+
+
+--A1L178 is readdata[30]~output at IOOBUF_X30_Y0_N2
+A1L178 = OUTPUT_BUFFER.O(.I(A1L110), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[30] is readdata[30] at PIN_AH13
+readdata[30] = OUTPUT();
+
+
+--A1L180 is readdata[31]~output at IOOBUF_X36_Y0_N2
+A1L180 = OUTPUT_BUFFER.O(.I(A1L111), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , );
+
+
+--readdata[31] is readdata[31] at PIN_AA14
+readdata[31] = OUTPUT();
+
+
+--A1L28 is clk~input at IOIBUF_X89_Y25_N21
+A1L28 = INPUT_BUFFER(.I(clk), );
+
+
+--clk is clk at PIN_Y27
+clk = INPUT();
+
+
+--A1L182 is reset_n~input at IOIBUF_X34_Y0_N41
+A1L182 = INPUT_BUFFER(.I(reset_n), );
+
+
+--reset_n is reset_n at PIN_AJ11
+reset_n = INPUT();
+
+
+--A1L185 is write_n[0]~input at IOIBUF_X40_Y0_N18
+A1L185 = INPUT_BUFFER(.I(write_n[0]), );
+
+
+--write_n[0] is write_n[0] at PIN_Y16
+write_n[0] = INPUT();
+
+
+--A1L194 is writedata[0]~input at IOIBUF_X4_Y0_N52
+A1L194 = INPUT_BUFFER(.I(writedata[0]), );
+
+
+--writedata[0] is writedata[0] at PIN_AF10
+writedata[0] = INPUT();
+
+
+--A1L3 is address[0]~input at IOIBUF_X22_Y0_N1
+A1L3 = INPUT_BUFFER(.I(address[0]), );
+
+
+--address[0] is address[0] at PIN_AE13
+address[0] = INPUT();
+
+
+--A1L5 is address[1]~input at IOIBUF_X24_Y0_N1
+A1L5 = INPUT_BUFFER(.I(address[1]), );
+
+
+--address[1] is address[1] at PIN_AD14
+address[1] = INPUT();
+
+
+--A1L7 is address[2]~input at IOIBUF_X22_Y0_N18
+A1L7 = INPUT_BUFFER(.I(address[2]), );
+
+
+--address[2] is address[2] at PIN_AF13
+address[2] = INPUT();
+
+
+--A1L9 is address[3]~input at IOIBUF_X10_Y0_N92
+A1L9 = INPUT_BUFFER(.I(address[3]), );
+
+
+--address[3] is address[3] at PIN_AG7
+address[3] = INPUT();
+
+
+--A1L11 is address[4]~input at IOIBUF_X20_Y0_N35
+A1L11 = INPUT_BUFFER(.I(address[4]), );
+
+
+--address[4] is address[4] at PIN_AK2
+address[4] = INPUT();
+
+
+--A1L13 is address[5]~input at IOIBUF_X20_Y0_N52
+A1L13 = INPUT_BUFFER(.I(address[5]), );
+
+
+--address[5] is address[5] at PIN_AK3
+address[5] = INPUT();
+
+
+--A1L15 is address[6]~input at IOIBUF_X8_Y0_N18
+A1L15 = INPUT_BUFFER(.I(address[6]), );
+
+
+--address[6] is address[6] at PIN_AF5
+address[6] = INPUT();
+
+
+--A1L17 is address[7]~input at IOIBUF_X22_Y0_N52
+A1L17 = INPUT_BUFFER(.I(address[7]), );
+
+
+--address[7] is address[7] at PIN_AK4
+address[7] = INPUT();
+
+
+--A1L19 is address[8]~input at IOIBUF_X20_Y0_N1
+A1L19 = INPUT_BUFFER(.I(address[8]), );
+
+
+--address[8] is address[8] at PIN_AA13
+address[8] = INPUT();
+
+
+--A1L21 is address[9]~input at IOIBUF_X10_Y0_N75
+A1L21 = INPUT_BUFFER(.I(address[9]), );
+
+
+--address[9] is address[9] at PIN_AF8
+address[9] = INPUT();
+
+
+--A1L23 is address[10]~input at IOIBUF_X26_Y0_N92
+A1L23 = INPUT_BUFFER(.I(address[10]), );
+
+
+--address[10] is address[10] at PIN_AJ7
+address[10] = INPUT();
+
+
+--A1L25 is address[11]~input at IOIBUF_X12_Y0_N18
+A1L25 = INPUT_BUFFER(.I(address[11]), );
+
+
+--address[11] is address[11] at PIN_AB12
+address[11] = INPUT();
+
+
+--A1L196 is writedata[1]~input at IOIBUF_X2_Y0_N92
+A1L196 = INPUT_BUFFER(.I(writedata[1]), );
+
+
+--writedata[1] is writedata[1] at PIN_AE9
+writedata[1] = INPUT();
+
+
+--A1L198 is writedata[2]~input at IOIBUF_X6_Y0_N18
+A1L198 = INPUT_BUFFER(.I(writedata[2]), );
+
+
+--writedata[2] is writedata[2] at PIN_AE7
+writedata[2] = INPUT();
+
+
+--A1L200 is writedata[3]~input at IOIBUF_X2_Y0_N75
+A1L200 = INPUT_BUFFER(.I(writedata[3]), );
+
+
+--writedata[3] is writedata[3] at PIN_AD9
+writedata[3] = INPUT();
+
+
+--A1L202 is writedata[4]~input at IOIBUF_X4_Y0_N1
+A1L202 = INPUT_BUFFER(.I(writedata[4]), );
+
+
+--writedata[4] is writedata[4] at PIN_AC9
+writedata[4] = INPUT();
+
+
+--A1L204 is writedata[5]~input at IOIBUF_X2_Y0_N41
+A1L204 = INPUT_BUFFER(.I(writedata[5]), );
+
+
+--writedata[5] is writedata[5] at PIN_AD11
+writedata[5] = INPUT();
+
+
+--A1L206 is writedata[6]~input at IOIBUF_X4_Y0_N35
+A1L206 = INPUT_BUFFER(.I(writedata[6]), );
+
+
+--writedata[6] is writedata[6] at PIN_AE11
+writedata[6] = INPUT();
+
+
+--A1L208 is writedata[7]~input at IOIBUF_X4_Y0_N18
+A1L208 = INPUT_BUFFER(.I(writedata[7]), );
+
+
+--writedata[7] is writedata[7] at PIN_AD10
+writedata[7] = INPUT();
+
+
+--A1L187 is write_n[1]~input at IOIBUF_X12_Y0_N35
+A1L187 = INPUT_BUFFER(.I(write_n[1]), );
+
+
+--write_n[1] is write_n[1] at PIN_AF6
+write_n[1] = INPUT();
+
+
+--A1L210 is writedata[8]~input at IOIBUF_X14_Y0_N35
+A1L210 = INPUT_BUFFER(.I(writedata[8]), );
+
+
+--writedata[8] is writedata[8] at PIN_AG5
+writedata[8] = INPUT();
+
+
+--A1L212 is writedata[9]~input at IOIBUF_X16_Y0_N52
+A1L212 = INPUT_BUFFER(.I(writedata[9]), );
+
+
+--writedata[9] is writedata[9] at PIN_AH3
+writedata[9] = INPUT();
+
+
+--A1L214 is writedata[10]~input at IOIBUF_X14_Y0_N1
+A1L214 = INPUT_BUFFER(.I(writedata[10]), );
+
+
+--writedata[10] is writedata[10] at PIN_AJ1
+writedata[10] = INPUT();
+
+
+--A1L216 is writedata[11]~input at IOIBUF_X16_Y0_N18
+A1L216 = INPUT_BUFFER(.I(writedata[11]), );
+
+
+--writedata[11] is writedata[11] at PIN_AD12
+writedata[11] = INPUT();
+
+
+--A1L218 is writedata[12]~input at IOIBUF_X10_Y0_N58
+A1L218 = INPUT_BUFFER(.I(writedata[12]), );
+
+
+--writedata[12] is writedata[12] at PIN_AH2
+writedata[12] = INPUT();
+
+
+--A1L220 is writedata[13]~input at IOIBUF_X12_Y0_N1
+A1L220 = INPUT_BUFFER(.I(writedata[13]), );
+
+
+--writedata[13] is writedata[13] at PIN_AA12
+writedata[13] = INPUT();
+
+
+--A1L222 is writedata[14]~input at IOIBUF_X14_Y0_N18
+A1L222 = INPUT_BUFFER(.I(writedata[14]), );
+
+
+--writedata[14] is writedata[14] at PIN_AJ2
+writedata[14] = INPUT();
+
+
+--A1L224 is writedata[15]~input at IOIBUF_X14_Y0_N52
+A1L224 = INPUT_BUFFER(.I(writedata[15]), );
+
+
+--writedata[15] is writedata[15] at PIN_AH5
+writedata[15] = INPUT();
+
+
+--A1L189 is write_n[2]~input at IOIBUF_X12_Y0_N52
+A1L189 = INPUT_BUFFER(.I(write_n[2]), );
+
+
+--write_n[2] is write_n[2] at PIN_AG6
+write_n[2] = INPUT();
+
+
+--A1L226 is writedata[16]~input at IOIBUF_X28_Y0_N18
+A1L226 = INPUT_BUFFER(.I(writedata[16]), );
+
+
+--writedata[16] is writedata[16] at PIN_AC14
+writedata[16] = INPUT();
+
+
+--A1L228 is writedata[17]~input at IOIBUF_X26_Y0_N75
+A1L228 = INPUT_BUFFER(.I(writedata[17]), );
+
+
+--writedata[17] is writedata[17] at PIN_AJ6
+writedata[17] = INPUT();
+
+
+--A1L230 is writedata[18]~input at IOIBUF_X30_Y0_N52
+A1L230 = INPUT_BUFFER(.I(writedata[18]), );
+
+
+--writedata[18] is writedata[18] at PIN_AK9
+writedata[18] = INPUT();
+
+
+--A1L232 is writedata[19]~input at IOIBUF_X28_Y0_N35
+A1L232 = INPUT_BUFFER(.I(writedata[19]), );
+
+
+--writedata[19] is writedata[19] at PIN_AK7
+writedata[19] = INPUT();
+
+
+--A1L234 is writedata[20]~input at IOIBUF_X28_Y0_N52
+A1L234 = INPUT_BUFFER(.I(writedata[20]), );
+
+
+--writedata[20] is writedata[20] at PIN_AK8
+writedata[20] = INPUT();
+
+
+--A1L236 is writedata[21]~input at IOIBUF_X24_Y0_N18
+A1L236 = INPUT_BUFFER(.I(writedata[21]), );
+
+
+--writedata[21] is writedata[21] at PIN_AE14
+writedata[21] = INPUT();
+
+
+--A1L238 is writedata[22]~input at IOIBUF_X34_Y0_N58
+A1L238 = INPUT_BUFFER(.I(writedata[22]), );
+
+
+--writedata[22] is writedata[22] at PIN_AK11
+writedata[22] = INPUT();
+
+
+--A1L240 is writedata[23]~input at IOIBUF_X26_Y0_N58
+A1L240 = INPUT_BUFFER(.I(writedata[23]), );
+
+
+--writedata[23] is writedata[23] at PIN_AG13
+writedata[23] = INPUT();
+
+
+--A1L191 is write_n[3]~input at IOIBUF_X24_Y0_N52
+A1L191 = INPUT_BUFFER(.I(write_n[3]), );
+
+
+--write_n[3] is write_n[3] at PIN_AK6
+write_n[3] = INPUT();
+
+
+--A1L242 is writedata[24]~input at IOIBUF_X24_Y0_N35
+A1L242 = INPUT_BUFFER(.I(writedata[24]), );
+
+
+--writedata[24] is writedata[24] at PIN_AJ5
+writedata[24] = INPUT();
+
+
+--A1L244 is writedata[25]~input at IOIBUF_X36_Y0_N18
+A1L244 = INPUT_BUFFER(.I(writedata[25]), );
+
+
+--writedata[25] is writedata[25] at PIN_AA15
+writedata[25] = INPUT();
+
+
+--A1L246 is writedata[26]~input at IOIBUF_X28_Y0_N1
+A1L246 = INPUT_BUFFER(.I(writedata[26]), );
+
+
+--writedata[26] is writedata[26] at PIN_AB15
+writedata[26] = INPUT();
+
+
+--A1L248 is writedata[27]~input at IOIBUF_X40_Y0_N52
+A1L248 = INPUT_BUFFER(.I(writedata[27]), );
+
+
+--writedata[27] is writedata[27] at PIN_AK14
+writedata[27] = INPUT();
+
+
+--A1L250 is writedata[28]~input at IOIBUF_X50_Y0_N41
+A1L250 = INPUT_BUFFER(.I(writedata[28]), );
+
+
+--writedata[28] is writedata[28] at PIN_AE17
+writedata[28] = INPUT();
+
+
+--A1L252 is writedata[29]~input at IOIBUF_X26_Y0_N41
+A1L252 = INPUT_BUFFER(.I(writedata[29]), );
+
+
+--writedata[29] is writedata[29] at PIN_AG12
+writedata[29] = INPUT();
+
+
+--A1L254 is writedata[30]~input at IOIBUF_X50_Y0_N58
+A1L254 = INPUT_BUFFER(.I(writedata[30]), );
+
+
+--writedata[30] is writedata[30] at PIN_AF18
+writedata[30] = INPUT();
+
+
+--A1L256 is writedata[31]~input at IOIBUF_X32_Y0_N52
+A1L256 = INPUT_BUFFER(.I(writedata[31]), );
+
+
+--writedata[31] is writedata[31] at PIN_AH8
+writedata[31] = INPUT();
+
+
+
+--A1L29 is clk~inputCLKENA0 at CLKCTRL_G10
+A1L29 = cyclonev_clkena(.INCLK = A1L28) WITH (clock_type = "Global Clock", ena_register_mode = "always enabled");
+
+
+--A1L32 is RAM_0~21feeder at MLABCELL_X15_Y2_N33
+A1L32 = VCC;
+
+
+--A1L53 is RAM_1~21feeder at MLABCELL_X15_Y2_N6
+A1L53 = VCC;
+
+
+--A1L74 is RAM_2~21feeder at LABCELL_X27_Y2_N30
+A1L74 = VCC;
+
+
+--A1L95 is RAM_3~21feeder at LABCELL_X27_Y2_N3
+A1L95 = VCC;
+
+

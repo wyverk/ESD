@@ -1,0 +1,108 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+
+LIBRARY work;
+USE work.generic_reg_pkg.ALL;
+USE work.rising_edge_synchronizer.ALL;
+
+ENTITY lpf IS
+	PORT(
+		clk: IN STD_LOGIC;
+		reset_n: IN STD_LOGIC;
+		data_in: IN SIGNED(15 DOWNTO 0);
+		filter_en: IN STD_LOGIC;
+		data_out: OUT SIGNED(15 DOWNTO 0)
+	);
+END ENTITY;
+
+ARCHITECTURE arch OF lpf IS
+	TYPE FIXED_POINT IS ARRAY(15 DOWNTO 0) OF SIGNED(15 DOWNTO 0);
+	CONSTANT coefs : FIXED_POINT := 
+	{
+		0x0052,
+		0x00BB,
+		0x01E2,
+		0x0408,
+		0x071B,
+		0x0AAD,
+		0x0E11,
+		0x1080,
+		0x1162,
+		0x1080,
+		0x0E11,
+		0x0AAD,
+		0x071B,
+		0x0408,
+		0x01E2,
+		0x00BB,
+		0x0052
+	}
+	
+	TYPE SIGNED_ARRAY IS ARRAY(15 DOWNTO 0) OF SIGNED(15 DOWNTO 0);
+	
+	SIGNAL reg_data : SIGNED_ARRAY := (OTHERS => (OTHERS => '0'));
+	SIGNAL after_mul : SIGNED_ARRAY := (OTHERS => (OTHERS => '0'));
+
+	COMPONENT multiply IS
+		PORT
+		(
+			dataa		: IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+			datab		: IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+			result		: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+		);
+	END COMPONENT;
+	
+	
+	SIGNAL reset_edge, filter_edge : STD_LOGIC := '0';
+BEGIN
+	reset_sync: rising_edge_synchronizer
+	PORT MAP(
+		clk => clk,
+		reset => '0',
+		input => reset_n,
+		edge => reset_edge
+	);
+	
+	filter_sync: rising_edge_synchronizer
+	PORT MAP(
+		clk => clk,
+		reset => '0',
+		input => filter_en,
+		edge => filter_edge
+	);
+	
+	Reg_GEN:
+	for i in 0 to 15 GENERATE
+		lsb: if i = 0 GENERATE
+			U0: generic_reg
+			PORT MAP(
+				clk => clk,
+				reset => reset_edge,
+				enable => filter_edge,
+				input => data_in,
+				output => reg_data(0)
+			);
+		END GENERATE lsb;
+		
+		upper: if i > 0 GENERATE
+			Ux: generic_reg
+			PORT MAP(
+				clk => clk,
+				reset => reset_edge,
+				enable => filter_edge,
+				input => reg_data(i-1),
+				output => reg_data(i)
+			);
+		END GENERATE upper;
+	END GENERATE;
+	
+	mul_gen:
+	for i IN 0 TO 15 GENERATE
+		lsb: if i = 0 GENERATE
+			U0: multiply
+			PORT MAP(
+				dataa => data_in,
+				datab => coefs(0),
+				result => 
+	

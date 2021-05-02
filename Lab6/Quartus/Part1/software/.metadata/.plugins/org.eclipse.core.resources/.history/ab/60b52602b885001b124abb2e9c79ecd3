@@ -1,0 +1,105 @@
+//						Lab 5 I think
+// Quan Nguyen
+
+
+
+
+#include "io.h"
+#include <stdio.h>
+#include "system.h"
+#include "alt_types.h"
+#include "sys/alt_irq.h"
+
+
+// create standard embedded type definitions
+typedef   signed char   sint8;              // signed 8 bit values
+typedef unsigned char   uint8;              // unsigned 8 bit values
+typedef   signed short  sint16;             // signed 16 bit values
+typedef unsigned short  uint16;             // unsigned 16 bit values
+typedef   signed long   sint32;             // signed 32 bit values
+typedef unsigned long   uint32;             // unsigned 32 bit values
+typedef         float   real32;             // 32 bit real values
+
+//set up pointers to peripherals
+volatile uint32* KEY_ptr = (uint32*)KEY_BASE;
+volatile uint32* LED_ptr = (uint32*)LEDS_BASE;
+uint32* INFR_RAM_ptr = (uint32*)INFERRED_RAM_BASE;
+
+void Ram_test_8bit(uint32* start, int num_write, uint8 data[]){
+	for(int i = 0; i < num_write; i++){
+		*(start + i) = data[i];
+	}
+
+	for(int i = 0; i < num_write; i++){
+		if(data[i] != *(start + i)){
+			*(LED_ptr) = 0xFF;
+		}else{
+			*(LED_ptr) = 0x00;
+		}
+	}
+}
+
+void Ram_test_16bit(uint32* start, int num_write, uint16 data[]){
+	for(int i = 0; i < num_write; i++){
+		*(start + i) = data[i];
+	}
+
+	for(int i = 0; i < num_write; i++){
+		if(data[i] != *(start + i)){
+			*(LED_ptr) = 0xFF;
+		}else{
+			*(LED_ptr) = 0x00;
+		}
+	}
+}
+
+void Ram_test_32bit(uint32* start, int num_write, uint32 data[]){
+	for(int i = 0; i < num_write; i++){
+		*(start + i) = data[i];
+	}
+
+	for(int i = 0; i < num_write; i++){
+		if(data[i] != *(start + i)){
+			*(LED_ptr) = 0xFF;
+		}else{
+			*(LED_ptr) = 0x00;
+		}
+	}
+}
+
+
+int main(void)
+/*****************************************************************************/
+/* Main Program                                                              */
+/*                                                                           */
+/*****************************************************************************/
+{
+	int num_write = 10;
+	uint8 data_8bit[num_write];
+	uint16 data_16bit[num_write];
+	uint32 data_32bit[num_write];
+	uint32 data_32bit_ramp[];
+
+	for(int i = 0; i < num_write; i++){
+		data_8bit[i] = i;
+		data_16bit[i] = i;
+		data_32bit[i] = i;
+	}
+
+	for(int i = 0; i < 0x12345678; i++){
+		data_32bit_ramp[i] = i;
+	}
+
+    //Ram_test_8bit(INFR_RAM_ptr, num_write, data_8bit);
+    //Ram_test_16bit(INFR_RAM_ptr, num_write, data_16bit);
+    //Ram_test_32bit(INFR_RAM_ptr, num_write, data_32bit);
+
+    Ram_test_32bit(INFR_RAM_ptr, num_write, data_32bit_ramp);
+
+    return 0;
+}
+
+
+
+
+
